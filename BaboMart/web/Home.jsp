@@ -1,19 +1,20 @@
 <%-- 
-    Document   : Home
-    Created on : Feb 24, 2022, 11:33:13 PM
+    Document   : Home.jsp
+    Created on : Mar 7, 2022, 9:39:15 AM
     Author     : baobao
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-         <meta charset="UTF-8">
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="description" content="Ogani Template">
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BabooMart</title>
+    <title>BaBooMart</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -27,9 +28,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
-    <body>
-         <!-- Page Preloder -->
+</head>
+
+<body>
+    <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
@@ -38,7 +40,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="img/Màu đào và Xanh dương Giả Hữu cơ Nhà Biểu trưng Phong cách sống.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -53,8 +55,8 @@
                 <div>English</div>
                 <span class="arrow_carrot-down"></span>
                 <ul>
-                    <li><a href="#">Spanis</a></li>
-                    <li><a href="#">English</a></li>
+                    <li><a href="#">Tiếng Việt</a></li>
+                    <li><a href="#">Tiếng Anh</a></li>
                 </ul>
             </div>
             <div class="header__top__right__auth">
@@ -67,10 +69,10 @@
                 <li><a href="./shop-grid.html">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
+                        <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
+                        <li><a href="./shoping-cart.html">Giỏ Hàng</a></li>
+                        <li><a href="./checkout.html">Thanh Toán</a></li>
+                        <li><a href="./blog-details.html">Blog</a></li>
                     </ul>
                 </li>
                 <li><a href="./blog.html">Blog</a></li>
@@ -86,8 +88,8 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i> baboomart@gmail.com</li>
+                <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>
             </ul>
         </div>
     </div>
@@ -101,8 +103,8 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li><i class="fa fa-envelope"></i> baboomart@gmail.com</li>
+                                <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>
                             </ul>
                         </div>
                     </div>
@@ -119,12 +121,12 @@
                                 <div>English</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
-                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">Vietnamese</a></li>
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="#"><i class="fa fa-user"></i> Đăng Nhập</a>
                             </div>
                         </div>
                     </div>
@@ -135,24 +137,24 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="img/video-1646625317.gif" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
+                            <li class="active"><a href="./index.html">Trang Chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản Phẩm</a></li>
+                            <li><a href="#">Giới Thiệu</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
+                                    <li><a href="./shoping-cart.html">Đơn Hàng</a></li>
+                                    <li><a href="./checkout.html">Thanh Toán</a></li>
+                                    <li><a href="./blog-details.html">Tin Tức</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+<!--                            <li><a href="./blog.html">Blog</a></li>-->
+                            <li><a href="./contact.html">Liên Hệ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -181,20 +183,21 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Danh Mục</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                            <li><a href="#">Thời Trang Nam</a></li>
+                            <li><a href="#">Thời Trang Nữ</a></li>
+                            <li><a href="#">Điện Thoại Và Phụ Kiện</a></li>
+                            <li><a href="#">Thiết Bị Điện Tử</a></li>
+                            <li><a href="#">Thể Thao Và Du Lịch</a></li>
+                            <li><a href="#">Mẹ & Bé</a></li>
+                            <li><a href="#">Sắc Đẹp</a></li>
+                            <li><a href="#">Giày Dép</a></li>
+                            <li><a href="#">Chăm Sóc Nhà Cửa</a></li>
+                            <li><a href="#">Sách</a></li>
+                            <li><a href="#">Đồ Chơi</a></li>
+                            <li><a href="#">Balo</a></li>
                         </ul>
                     </div>
                 </div>
@@ -203,10 +206,10 @@
                         <div class="hero__search__form">
                             <form action="#">
                                 <div class="hero__search__categories">
-                                    All Categories
+                                    Tất Cả Các Loại
                                     <span class="arrow_carrot-down"></span>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?">
+                                <input type="text" placeholder="Tìm Kiếm">
                                 <button type="submit" class="site-btn">SEARCH</button>
                             </form>
                         </div>
@@ -215,8 +218,8 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>support 24/7 time</span>
+                                <h5>+98 222 466</h5>
+                                <span>Hỗ Trợ 24/7</span>
                             </div>
                         </div>
                     </div>
@@ -778,5 +781,7 @@
     <script src="js/main.js"></script>
 
 
-    </body>
+
+</body>
+
 </html>

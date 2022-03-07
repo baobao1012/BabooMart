@@ -45,14 +45,15 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("         <meta charset=\"UTF-8\">\n");
+      out.write("<html lang=\"zxx\">\n");
+      out.write("\n");
+      out.write("<head>\n");
+      out.write("    <meta charset=\"UTF-8\">\n");
       out.write("    <meta name=\"description\" content=\"Ogani Template\">\n");
       out.write("    <meta name=\"keywords\" content=\"Ogani, unica, creative, html\">\n");
       out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
       out.write("    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n");
-      out.write("    <title>BabooMart</title>\n");
+      out.write("    <title>BaBooMart</title>\n");
       out.write("\n");
       out.write("    <!-- Google Font -->\n");
       out.write("    <link href=\"https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap\" rel=\"stylesheet\">\n");
@@ -66,9 +67,10 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link rel=\"stylesheet\" href=\"css/owl.carousel.min.css\" type=\"text/css\">\n");
       out.write("    <link rel=\"stylesheet\" href=\"css/slicknav.min.css\" type=\"text/css\">\n");
       out.write("    <link rel=\"stylesheet\" href=\"css/style.css\" type=\"text/css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("         <!-- Page Preloder -->\n");
+      out.write("</head>\n");
+      out.write("\n");
+      out.write("<body>\n");
+      out.write("    <!-- Page Preloder -->\n");
       out.write("    <div id=\"preloder\">\n");
       out.write("        <div class=\"loader\"></div>\n");
       out.write("    </div>\n");
@@ -106,10 +108,10 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <li><a href=\"./shop-grid.html\">Shop</a></li>\n");
       out.write("                <li><a href=\"#\">Pages</a>\n");
       out.write("                    <ul class=\"header__menu__dropdown\">\n");
-      out.write("                        <li><a href=\"./shop-details.html\">Shop Details</a></li>\n");
-      out.write("                        <li><a href=\"./shoping-cart.html\">Shoping Cart</a></li>\n");
-      out.write("                        <li><a href=\"./checkout.html\">Check Out</a></li>\n");
-      out.write("                        <li><a href=\"./blog-details.html\">Blog Details</a></li>\n");
+      out.write("                        <li><a href=\"./shop-details.html\">Sản Phẩm Chi Tiết</a></li>\n");
+      out.write("                        <li><a href=\"./shoping-cart.html\">Giỏ Hàng</a></li>\n");
+      out.write("                        <li><a href=\"./checkout.html\">Thanh Toán</a></li>\n");
+      out.write("                        <li><a href=\"./blog-details.html\">Blog</a></li>\n");
       out.write("                    </ul>\n");
       out.write("                </li>\n");
       out.write("                <li><a href=\"./blog.html\">Blog</a></li>\n");
@@ -817,7 +819,9 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <script src=\"js/main.js\"></script>\n");
       out.write("\n");
       out.write("\n");
-      out.write("    </body>\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
