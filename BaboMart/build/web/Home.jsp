@@ -40,7 +40,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/Màu đào và Xanh dương Giả Hữu cơ Nhà Biểu trưng Phong cách sống.png" alt=""></a>
+            <a href="#"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -56,18 +56,18 @@
                 <span class="arrow_carrot-down"></span>
                 <ul>
                     <li><a href="#">Tiếng Việt</a></li>
-                    <li><a href="#">Tiếng Anh</a></li>
+                    <li><a href="#">English</a></li>
                 </ul>
             </div>
             <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
+                <a href="#"><i class="fa fa-user"></i> Đăng Nhập</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
-                <li><a href="#">Pages</a>
+                <li class="active"><a href="./index.html">Trang Chủ</a></li>
+                <li><a href="./shop-grid.html">Sản Phẩm</a></li>
+                <li><a href="#">Giới Thiệu</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
                         <li><a href="./shoping-cart.html">Giỏ Hàng</a></li>
@@ -75,16 +75,16 @@
                         <li><a href="./blog-details.html">Blog</a></li>
                     </ul>
                 </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                
+                <li><a href="./contact.html">Liên Hệ</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://vn.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
         </div>
         <div class="humberger__menu__contact">
             <ul>
@@ -111,10 +111,11 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                        <a href="https://www.facebook.com/"><i class="fa fa-facebook">
+                                    </i></a>
+                                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                <a href="https://vn.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
                                 <img src="img/language.png" alt="">
@@ -137,7 +138,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/video-1646625317.gif" alt=""></a>
+                        <a href="./index.html"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -147,10 +148,11 @@
                             <li><a href="./shop-grid.html">Sản Phẩm</a></li>
                             <li><a href="#">Giới Thiệu</a>
                                 <ul class="header__menu__dropdown">
+                                    <li><a href="./blog-details.html">Giới Thiệu</a></li>
                                     <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
                                     <li><a href="./shoping-cart.html">Đơn Hàng</a></li>
                                     <li><a href="./checkout.html">Thanh Toán</a></li>
-                                    <li><a href="./blog-details.html">Tin Tức</a></li>
+                                    
                                 </ul>
                             </li>
 <!--                            <li><a href="./blog.html">Blog</a></li>-->
@@ -194,6 +196,7 @@
                             <li><a href="#">Mẹ & Bé</a></li>
                             <li><a href="#">Sắc Đẹp</a></li>
                             <li><a href="#">Giày Dép</a></li>
+                            <li><a href="#">Hoa Quả</a></li>
                             <li><a href="#">Chăm Sóc Nhà Cửa</a></li>
                             <li><a href="#">Sách</a></li>
                             <li><a href="#">Đồ Chơi</a></li>
@@ -223,13 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                        <div class="hero__text">
-                            <span>FRUIT FRESH</span>
-                            <h2>Vegetable <br />100% Organic</h2>
-                            <p>Free Pickup and Delivery Available</p>
-                            <a href="#" class="primary-btn">SHOP NOW</a>
-                        </div>
+                    <div class="hero__item set-bg" data-setbg="img/hero/5eeecbcf6bb600bc8724bb7018717405.jpg">
                     </div>
                 </div>
             </div>
@@ -243,28 +240,28 @@
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Fresh Fruit</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/nam1.jpg">
+                            <h5><a href="#">Thời Trang Nam</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Dried Fruit</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/nu1.jpg">
+                            <h5><a href="#">Thời Trang Nữ</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/thietbidientu1.jpg">
+                            <h5><a href="#">Thiết Bị Điện Tử</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/sacdep.jpg">
+                            <h5><a href="#">Sắc Đẹp</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/chamsocnhacuajpg.jpg">
+                            <h5><a href="#">Chăm Sóc Nhà Cửa</a></h5>
                         </div>
                     </div>
                 </div>
@@ -279,23 +276,23 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Featured Product</h2>
+                        <h2>Sản Phẩm Gần Đây</h2>
                     </div>
                     <div class="featured__controls">
                         <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".oranges">Oranges</li>
-                            <li data-filter=".fresh-meat">Fresh Meat</li>
-                            <li data-filter=".vegetables">Vegetables</li>
-                            <li data-filter=".fastfood">Fastfood</li>
+                            <li class="active" data-filter="*">Tất Cả</li>
+                            <li data-filter=".oranges">Thời Trang Nam</li>
+                            <li data-filter=".fresh-meat">Thời Trang Nữ</li>
+                            <li data-filter=".vegetables">Hoa Quả</li>
+                            <li data-filter=".fastfood">Thiết Bị Điện Tử</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row featured__filter">
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/thoitrangnam1.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -303,14 +300,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Áo Sweater Nỉ Bông Nam</a></h6>
+                            <h5>300.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/thietbidientu1.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -318,14 +315,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Camera Hồng Ngoại</a></h6>
+                            <h5>1.500.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/thoitrangnam3jpg.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -333,14 +330,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Áo Somi Nam</a></h6>
+                            <h5>200.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/thoitrangnu1jpg.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -348,14 +345,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Áo Thun Đi Biển Nữ</a></h6>
+                            <h5>150.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/thoitrangnu2jpg.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -363,14 +360,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Set Đồ Dạ, Chân Váy Chữ A Nữ</a></h6>
+                            <h5>800.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/thoitrangnu3jpg.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -378,12 +375,12 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Áo Cardigan Có Cổ Nữ</a></h6>
+                            <h5>300.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
                             <ul class="featured__item__pic__hover">
@@ -393,12 +390,12 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Xoài</a></h6>
+                            <h5>25.000</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
                             <ul class="featured__item__pic__hover">
@@ -408,8 +405,8 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Táo</a></h6>
+                            <h5>50.000</h5>
                         </div>
                     </div>
                 </div>
@@ -443,63 +440,63 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Latest Products</h4>
+                        <h4>Sản Phẩm Gần Đây</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/featured/feature-8.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Táo</h6>
+                                        <span>50.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/featured/thietbidientu2.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Loa Bluetooth</h6>
+                                        <span>600.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/featured/thietbidientu4.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Máy Xay Sinh Tố</h6>
+                                        <span>1.250.000</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/featured/feature-7.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Xoài</h6>
+                                        <span>25.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/featured/thoitrangnam3jpg.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Áo Somi Nam</h6>
+                                        <span>200.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/featured/thoitrangnu3jpg.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Áo Cardigan Có Cổ Nữ</h6>
+                                        <span>300.000</span>
                                     </div>
                                 </a>
                             </div>
@@ -508,63 +505,63 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Top Rated Products</h4>
+                        <h4>Sản Phẩm Bán Chạy</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/latest-product/sanphambanchay1.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Son Dưỡng DHC Không Màu</h6>
+                                        <span>150.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/latest-product/sanphambanchay2.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Sữa Rửa Mặt Cetaphil</h6>
+                                        <span>300.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/latest-product/sanphambanchay3.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Kính Mắt Thời Trang Đi Biển</h6>
+                                        <span>15.000</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/latest-product/sanphambanchay4.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Áo Somi Lanh Thoáng Mát</h6>
+                                        <span>150.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/latest-product/sanphambanchay5.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Loa Bluetooth</h6>
+                                        <span>300.000</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/latest-product/sanphambanchay6.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Tai Nghe Boat Hero</h6>
+                                        <span>500.000</span>
                                     </div>
                                 </a>
                             </div>
@@ -573,63 +570,64 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Review Products</h4>
+                        <h4>Review Sản Phẩm</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/latest-product/iphone 13 promax.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        
+                                        <span>Iphone 13 Promax</span>
+                                        <h6>Chiếc điện thoại thông minh đến từ nhà Apple</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/latest-product/bleu de chanel.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <span>Blue De Chanel</span>
+                                        <h6>Nước hoa để khẳng định bản thân</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/latest-product/bioderma.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <span>Bioderma</span>
+                                        <h6>Sản phẩm tẩy trang mà ai cũng nên có</h6>
                                     </div>
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/latest-product/balance vitamin c.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <span>Balance Vitamin C</span>
+                                        <h6>Serum thần thánh cứu cánh mọi loại da</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/latest-product/foreo.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <span>Máy Rửa Mặt Foreo</span>
+                                        <h6>Một sản phẩm để từ nhà Foreo</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/latest-product/omega seamaster 300 heritage.jpg" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <span>Đồng Hồ Nam Omega Seamaster 300 Heritage</span>
+                                        <h6>Thể hiện bản lĩnh phái mạnh</h6>
                                     </div>
                                 </a>
                             </div>
@@ -647,7 +645,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title from-blog__title">
-                        <h2>From The Blog</h2>
+                        <h2>Blog</h2>
                     </div>
                 </div>
             </div>
@@ -655,45 +653,45 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="img/blog/blog-1.jpg" alt="">
+                            <img src="img/latest-product/bodocuabangiabaonhieu.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-calendar-o"></i>15/5/2020</li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
-                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                            <h5><a href="#">Bộ Đồ Của Bạn Giá Bao Nhiêu</a></h5>
+                            <p>Đồ hiệu và câu chuyện đốt tiền có thể sẽ không như bạn nghĩ</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="img/blog/blog-2.jpg" alt="">
+                            <img src="img/latest-product/goiyqua83.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-calendar-o"></i>2/3/2020</li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
-                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                            <h5><a href="#">Gợi Ý Qùa Ngày 8/3</a></h5>
+                            <p>Những món quà tinh tế và hữu dụng có thể giúp bạn ghi điểm đấy</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="img/blog/blog-3.jpg" alt="">
+                            <img src="img/latest-product/review-cuon-ban-khong-thong-minh-lam-dau-revisach.com_.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-calendar-o"></i>16/7/2020</li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
-                            <h5><a href="#">Visit the clean farm in the US</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                            <h5><a href="#">Lật Tẩy Những Ảo Tưởng Của Não Bộ Với "Bạn Không Thông Minh Lắm Đâu"</a></h5>
+                            <p>Một cuốn sách giúp bạn khám phá nhiều khía cạnh khác nhau của não bộ</p>
                         </div>
                     </div>
                 </div>
@@ -709,43 +707,43 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Địa Chỉ: Khu Công Nghệ Cao Hòa Lạc, Thạch Hòa, Thạch Thất, Hà Nội</li>
+                            <li>Điện Thoại: +98 222 466</li>
+                            <li>Email: baboomart@gmai.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Useful Links</h6>
+                        <h6>Đường Dẫn Cần Thiết</h6>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Về Chúng Tôi</a></li>
+       
+                            <li><a href="#">Mua Sắm An Toàn</a></li>
+                            <li><a href="#">Thông Tin Giao Hàng</a></li>
+                            <li><a href="#">Chính Sách Bảo Mật</a></li>
+                            
                         </ul>
                         <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
-                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Chúng Tôi Là</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            
+                            <li><a href="#">Liên Lạc</a></li>
+                            
+                            <li><a href="#">Cam Kết</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <h6>Tham Gia Cùng Chúng Tôi Ngay Bây Giờ</h6>
+                        <p>Hãy để lại Email và chúng tôi sẽ gửi đến bạn thông tin cập nhật mới nhất và các ưu đãi</p>
                         <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
+                            <input type="text" placeholder="Nhập Email">
+                            <button type="submit" class="site-btn">Đồng Ý</button>
                         </form>
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -759,9 +757,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__text"><p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Bản quyền thuộc về công ty TNHH Baboo <i></i> 
+  </p></div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
