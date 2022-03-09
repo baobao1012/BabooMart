@@ -4,6 +4,7 @@
     Author     : baobao
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -188,19 +189,9 @@
                             <span>Danh Mục</span>
                         </div>
                         <ul>
-                            <li><a href="#">Thời Trang Nam</a></li>
-                            <li><a href="#">Thời Trang Nữ</a></li>
-                            <li><a href="#">Điện Thoại Và Phụ Kiện</a></li>
-                            <li><a href="#">Thiết Bị Điện Tử</a></li>
-                            <li><a href="#">Thể Thao Và Du Lịch</a></li>
-                            <li><a href="#">Mẹ & Bé</a></li>
-                            <li><a href="#">Sắc Đẹp</a></li>
-                            <li><a href="#">Giày Dép</a></li>
-                            <li><a href="#">Hoa Quả</a></li>
-                            <li><a href="#">Chăm Sóc Nhà Cửa</a></li>
-                            <li><a href="#">Sách</a></li>
-                            <li><a href="#">Đồ Chơi</a></li>
-                            <li><a href="#">Balo</a></li>
+                            <c:forEach items="${listDanhMucSanPham}" var="C">
+                            <li>${C.getTendanhmuc()}</li>
+                            </c:forEach>     
                         </ul>
                     </div>
                 </div>
