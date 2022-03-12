@@ -6,7 +6,9 @@
 package Controll;
 
 import DAO.DanhMucSanPhamDAO;
+import DAO.SanPhamDAO;
 import Entity.DanhMucSanPham;
+import Entity.SanPham;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -34,8 +36,10 @@ public class HomeController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
+        
         request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
         request.getRequestDispatcher("Home.jsp").forward(request, response);
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

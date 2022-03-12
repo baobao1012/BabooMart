@@ -4,9 +4,25 @@
         <servlet-name>HomeController</servlet-name>
         <servlet-class>Controll.HomeController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SanPhamController</servlet-name>
+        <servlet-class>Controll.SanPhamController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DanhMucController</servlet-name>
+        <servlet-class>Controll.DanhMucController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SanPhamController</servlet-name>
+        <url-pattern>/SanPham</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DanhMucController</servlet-name>
+        <url-pattern>/danhmuc</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
