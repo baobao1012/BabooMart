@@ -20,7 +20,7 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open-Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="assets/css/all.min.css">
@@ -70,8 +70,8 @@
 								<li ><a href="./Home.jsp">Trang Chủ</a>
 									
 								</li>
-								<li><a href="./SanPham.jsp">Sản Phẩm</a></li>
-								<li class="current-list-item"><a href="#">Giới Thiệu</a>
+								<li><a href="SanPham">Sản Phẩm</a></li>
+								<li class="current-list-item"><a href="./VeChungToi.jsp">Giới Thiệu</a>
 									
 								</li>
 								<li><a href="./LienHe.jsp">Liên Hệ</a>

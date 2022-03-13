@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 
 <body>
@@ -36,68 +37,9 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+    
 
-    <!-- Humberger Begin -->
-    <div class="humberger__menu__overlay"></div>
-    <div class="humberger__menu__wrapper">
-        <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
-        </div>
-        <div class="humberger__menu__cart">
-            <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-            </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
-        </div>
-        <div class="humberger__menu__widget">
-            <div class="header__top__right__language">
-                <img src="img/language.png" alt="">
-                <div>English</div>
-                <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li><a href="#">Spanis</a></li>
-                    <li><a href="#">English</a></li>
-                </ul>
-            </div>
-            <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
-            </div>
-        </div>
-        <nav class="humberger__menu__nav mobile-menu">
-            <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
-                <li><a href="#">Pages</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="mobile-menu-wrap"></div>
-        <div class="header__top__right__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
-        </div>
-        <div class="humberger__menu__contact">
-            <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
-            </ul>
-        </div>
-    </div>
-    <!-- Humberger End -->
-
-    <!-- Header Section Begin -->
-    <!-- Header Section Begin -->
+        <!-- Header Section Begin -->
         <header class="header">
             <div class="header__top">
                 <div class="container">
@@ -105,7 +47,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__left">
                                 <ul>
-                                    <li><i class="fa fa-envelope"></i> baboomart@gmail.com</li>
+                                    <li><i class="fas fa-envelope"></i> baboomart@gmail.com</li>
                                     <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>
                                 </ul>
                             </div>
@@ -113,11 +55,11 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__right">
                                 <div class="header__top__right__social">
-                                    <a href="https://www.facebook.com/"><i class="fa fa-facebook">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook">
                                         </i></a>
-                                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://vn.linkedin.com"><i class="fa fa-linkedin"></i></a>
-                                    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://vn.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
                                 </div>
                                 <div class="header__top__right__language">
                                     <img src="img/language.png" alt="">
@@ -147,7 +89,7 @@
                         <nav class="header__menu">
                             <ul>
                                 <li ><a href="./Home.jsp">Trang Chủ</a></li>
-                                <li ><a href="./SanPham.jsp">Sản Phẩm</a></li>
+                                <li ><a href="SanPham">Sản Phẩm</a></li>
                                 <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
                                 </li>
 
@@ -158,10 +100,10 @@
                     <div class="col-lg-3">
                         <div class="header__cart">
                             <ul>
-                                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i> </a></li>
                             </ul>
-                            <div class="header__cart__price">item: <span>$150.00</span></div>
+
                         </div>
                     </div>
                 </div>
@@ -226,21 +168,20 @@
         </section>
         <!-- Breadcrumb Section End -->
 
-
     <!-- Contact Section Begin -->
     <section class="contact spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
-                        <span class="icon_phone"></span>
+                        <span class="fa fa-phone"></span>
                         <h4>Phone</h4>
                         <p>+98 222 466</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
-                        <span class="icon_pin_alt"></span>
+                        <span class="fa fa-address-book"></span>
                         <h4>Địa Chỉ</h4>
                         <p>Khu Công Nghệ Cao Hòa Lạc, Thạch Hòa, Thạch Thất, Hà Nội</p>
                     </div>
@@ -254,7 +195,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
-                        <span class="icon_mail_alt"></span>
+                        <span class="fas fa-envelope"></span>
                         <h4>Email</h4>
                         <p>baboomart@gmai.com</p>
                     </div>
@@ -339,10 +280,10 @@
                                 <button type="submit" class="site-btn">Đồng Ý</button>
                             </form>
                             <div class="footer__widget__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
                     </div>

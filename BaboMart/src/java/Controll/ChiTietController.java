@@ -9,7 +9,6 @@ import DAO.SanPhamDAO;
 import Entity.SanPham;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author baobao
  */
-public class SearchController extends HttpServlet {
+public class ChiTietController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,10 +33,10 @@ public class SearchController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String keyword = request.getParameter("keyword");
-            List<SanPham> listSanPham1 = new SanPhamDAO().search(keyword);
-            request.setAttribute("listSanPham1", listSanPham1);
-            request.getRequestDispatcher("SanPham.jsp").forward(request, response);
+            int Masanpham =  Integer.parseInt(request.getParameter("Masanpham"));
+            SanPham sanpham = new SanPhamDAO().getMasanpham(Masanpham);
+            request.setAttribute("sanpham", sanpham);
+            request.getRequestDispatcher("ChiTiet.jsp").forward(request, response);
         }
     }
 

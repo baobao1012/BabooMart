@@ -35,6 +35,7 @@ public class SanPhamController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        final int page_size = 9;
         List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
         
         request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
@@ -44,12 +45,17 @@ public class SanPhamController extends HttpServlet {
         if(pageStr != null) {
             page = Integer.parseInt(pageStr);
         }
-        int page_size = 9;
+        
         SanPhamDAO sp = new SanPhamDAO();
         int totalRow = sp.getcount();
-        int totalPage = (totalRow % page_size == 0)?totalRow/page_size:(totalRow/page_size)+1;
+        int totalPage = totalRow/page_size;
+        if(totalRow % page_size != 0){
+            totalPage += 1;
+        }
         List<SanPham> listSanPham1 = new SanPhamDAO().getAllSanPhamPhanTrang(page, page_size);
+        List<SanPham> listSanPham = new SanPhamDAO().getAllSanPham();
         request.setAttribute("listSanPham1", listSanPham1);
+         request.setAttribute("listSanPham", listSanPham);
         request.setAttribute("totalPage", totalPage);
         request.setAttribute("page", page);
         request.getRequestDispatcher("SanPham.jsp").forward(request, response);

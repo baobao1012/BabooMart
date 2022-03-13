@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
     </head>
 
     <body>
@@ -37,66 +38,9 @@
             <div class="loader"></div>
         </div>
 
-        <!-- Humberger Begin -->
-        <div class="humberger__menu__overlay"></div>
-        <div class="humberger__menu__wrapper">
-            <div class="humberger__menu__logo">
-                <a href="#"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
-            </div>
-            <div class="humberger__menu__cart">
-                <ul>
-                    <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                </ul>
-                <div class="header__cart__price">item: <span>$150.00</span></div>
-            </div>
-            <div class="humberger__menu__widget">
-                <div class="header__top__right__language">
-                    <img src="img/language.png" alt="">
-                    <div>English</div>
-                    <span class="arrow_carrot-down"></span>
-                    <ul>
-                        <li><a href="#">Tiếng Việt</a></li>
-                        <li><a href="#">English</a></li>
-                    </ul>
-                </div>
-                <div class="header__top__right__auth">
-                    <a href="#"><i class="fa fa-user"></i> Đăng Nhập</a>
-                </div>
-            </div>
-            <nav class="humberger__menu__nav mobile-menu">
-                <ul>
-                    <li class="active"><a href="./index.html">Trang Chủ</a></li>
-                    <li><a href="./shop-grid.html">Sản Phẩm</a></li>
-                    <li><a href="#">Giới Thiệu</a>
-                        <ul class="header__menu__dropdown">
-                            <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
-                            <li><a href="./shoping-cart.html">Giỏ Hàng</a></li>
-                            <li><a href="./checkout.html">Thanh Toán</a></li>
-                            <li><a href="./blog-details.html">Blog</a></li>
-                        </ul>
-                    </li>
+        
 
-                    <li><a href="./contact.html">Liên Hệ</a></li>
-                </ul>
-            </nav>
-            <div id="mobile-menu-wrap"></div>
-            <div class="header__top__right__social">
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a href="https://vn.linkedin.com"><i class="fa fa-linkedin"></i></a>
-                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-            </div>
-            <div class="humberger__menu__contact">
-                <ul>
-                    <li><i class="fa fa-envelope"></i> baboomart@gmail.com</li>
-                    <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Humberger End -->
-
-        <!-- Header Section Begin -->
+         <!-- Header Section Begin -->
         <header class="header">
             <div class="header__top">
                 <div class="container">
@@ -104,7 +48,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__left">
                                 <ul>
-                                    <li><i class="fa fa-envelope"></i> baboomart@gmail.com</li>
+                                    <li><i class="fas fa-envelope"></i> baboomart@gmail.com</li>
                                     <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>
                                 </ul>
                             </div>
@@ -112,11 +56,11 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__right">
                                 <div class="header__top__right__social">
-                                    <a href="https://www.facebook.com/"><i class="fa fa-facebook">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook">
                                         </i></a>
-                                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://vn.linkedin.com"><i class="fa fa-linkedin"></i></a>
-                                    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://vn.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
                                 </div>
                                 <div class="header__top__right__language">
                                     <img src="img/language.png" alt="">
@@ -145,10 +89,9 @@
                     <div class="col-lg-6">
                         <nav class="header__menu">
                             <ul>
-                                <li class="active"><a href="./Home.jsp">Trang Chủ</a></li>
-                                <li><a href="SanPham">Sản Phẩm</a></li>
+                                <li class="active" ><a href="${homectr}">Trang Chủ</a></li>
+                                <li ><a href="SanPham">Sản Phẩm</a></li>
                                 <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
-                                   
                                 </li>
 
                                 <li><a href="./LienHe.jsp">Liên Hệ</a></li>
@@ -158,10 +101,10 @@
                     <div class="col-lg-3">
                         <div class="header__cart">
                             <ul>
-                                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i> </a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i> </a></li>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -192,13 +135,15 @@
                     <div class="col-lg-9">
                         <div class="hero__search">
                             <div class="hero__search__form">
-                                <form action="#">
+                                <form action="Search">
                                     <div class="hero__search__categories">
                                         Tất Cả Các Loại
                                         <span class="arrow_carrot-down"></span>
                                     </div>
-                                    <input type="text" placeholder="Tìm Kiếm">
-                                    <button type="submit" class="site-btn">SEARCH</button>
+                                    <input type="text" placeholder="Tìm Kiếm"
+                                           name="keyword"
+                                           >
+                                    <button type="submit" class="site-btn">Tìm Kiếm</button>
                                 </form>
                             </div>
                             <div class="hero__search__phone">
@@ -211,7 +156,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="hero__item set-bg" data-setbg="img/hero/5eeecbcf6bb600bc8724bb7018717405.jpg">
                         </div>
                     </div>
@@ -219,7 +163,6 @@
             </div>
         </section>
         <!-- Hero Section End -->
-
 
 
         <!-- Categories Section Begin -->
@@ -688,7 +631,7 @@
         </section>
         <!-- Blog Section End -->
 
-        <!-- Footer Section Begin -->
+       <!-- Footer Section Begin -->
         <footer class="footer spad">
             <div class="container">
                 <div class="row">
@@ -734,10 +677,10 @@
                                 <button type="submit" class="site-btn">Đồng Ý</button>
                             </form>
                             <div class="footer__widget__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
                     </div>
