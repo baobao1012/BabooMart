@@ -139,7 +139,7 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="header__logo">
-                            <a href="./index.html"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
+                            <a href="./Home.jsp"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -147,17 +147,11 @@
                             <ul>
                                 <li class="active"><a href="./Home.jsp">Trang Chủ</a></li>
                                 <li><a href="SanPham">Sản Phẩm</a></li>
-                                <li><a href="#">Giới Thiệu</a>
-                                    <ul class="header__menu__dropdown">
-                                        <li><a href="./blog-details.html">Giới Thiệu</a></li>
-                                        <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
-                                        <li><a href="./shoping-cart.html">Đơn Hàng</a></li>
-                                        <li><a href="./checkout.html">Thanh Toán</a></li>
-
-                                    </ul>
+                                <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
+                                   
                                 </li>
 
-                                <li><a href="./contact.html">Liên Hệ</a></li>
+                                <li><a href="./LienHe.jsp">Liên Hệ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -167,7 +161,7 @@
                                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                             </ul>
-                            <div class="header__cart__price">item: <span>$150.00</span></div>
+                            
                         </div>
                     </div>
                 </div>

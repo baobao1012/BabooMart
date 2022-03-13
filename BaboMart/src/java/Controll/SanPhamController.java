@@ -36,9 +36,22 @@ public class SanPhamController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
-        List<SanPham> listSanPham = new SanPhamDAO().getAllSanPham();
+        
         request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
-        request.setAttribute("listSanPham", listSanPham);
+        
+        int page = 1;
+        String pageStr = request.getParameter("page");
+        if(pageStr != null) {
+            page = Integer.parseInt(pageStr);
+        }
+        int page_size = 9;
+        SanPhamDAO sp = new SanPhamDAO();
+        int totalRow = sp.getcount();
+        int totalPage = (totalRow % page_size == 0)?totalRow/page_size:(totalRow/page_size)+1;
+        List<SanPham> listSanPham1 = new SanPhamDAO().getAllSanPhamPhanTrang(page, page_size);
+        request.setAttribute("listSanPham1", listSanPham1);
+        request.setAttribute("totalPage", totalPage);
+        request.setAttribute("page", page);
         request.getRequestDispatcher("SanPham.jsp").forward(request, response);
         
     }

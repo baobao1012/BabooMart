@@ -148,18 +148,11 @@
                         <nav class="header__menu">
                             <ul>
                                 <li ><a href="${homectr}">Trang Chủ</a></li>
-                                <li class="active"><a href="./shop-grid.html">Sản Phẩm</a></li>
-                                <li><a href="#">Giới Thiệu</a>
-                                    <ul class="header__menu__dropdown">
-                                        <li><a href="./blog-details.html">Giới Thiệu</a></li>
-                                        <li><a href="./shop-details.html">Sản Phẩm Chi Tiết</a></li>
-                                        <li><a href="./shoping-cart.html">Đơn Hàng</a></li>
-                                        <li><a href="./checkout.html">Thanh Toán</a></li>
-
-                                    </ul>
+                                <li class="active"><a href="./SanPhamd.html">Sản Phẩm</a></li>
+                                <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
                                 </li>
 
-                                <li><a href="./contact.html">Liên Hệ</a></li>
+                                <li><a href="./LienHe.jsp">Liên Hệ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -169,7 +162,7 @@
                                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                             </ul>
-                            <div class="header__cart__price">item: <span>$150.00</span></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -189,13 +182,15 @@
                     <div class="col-lg-9">
                         <div class="hero__search">
                             <div class="hero__search__form">
-                                <form action="#">
+                                <form action="Search">
                                     <div class="hero__search__categories">
                                         Tất Cả Các Loại
                                         <span class="arrow_carrot-down"></span>
                                     </div>
-                                    <input type="text" placeholder="Tìm Kiếm">
-                                    <button type="submit" class="site-btn">SEARCH</button>
+                                    <input type="text" placeholder="Tìm Kiếm"
+                                           name="keyword"
+                                           >
+                                    <button type="submit" class="site-btn">Tìm Kiếm</button>
                                 </form>
                             </div>
                             <div class="hero__search__phone">
@@ -325,7 +320,7 @@
                             </div>
                             <div class="row">
                                 <div class="product__discount__slider owl-carousel">   
-                                    <c:forEach items="${listSanPham}" var="p">
+                                    <c:forEach items="${listSanPham1}" var="p">
                                         <c:if test="${p.getKhuyenmai() > 0}">
                                             <div class="col-lg-4 ">
                                                 <div class="product__discount__item">
@@ -367,7 +362,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <c:forEach items="${listSanPham}" var="b">
+                            <c:forEach items="${listSanPham1}" var="b">
                                 <c:if test="${b.getKhuyenmai() eq 0}">
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="product__item">
@@ -389,10 +384,22 @@
                             </c:forEach>
                         </div>
                         <div class="product__pagination">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
+                            <c:choose>
+                                <c:when test="${requestScope.listSanPham1 == null || requestScope.listSanPham1.size() == 0}" >
+                                    Không Có Sản Phẩm Cần Tìm
+                                </c:when>
+                                <c:otherwise>
+                                    
+                                      <a href="#"><i class="fa fa-long-arrow-left"></i></a>
+                                      <c:forEach begin="1" end="${requestScope.totalPage}" var="i">
+                            <a href="SanPham?page=${i}">${i}</a>
+                            </c:forEach>
+                        
                             <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                                </c:otherwise>
+                                    
+                            </c:choose>
+                           
                         </div>
                     </div>
                 </div>
