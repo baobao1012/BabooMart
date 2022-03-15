@@ -22,7 +22,11 @@
     </servlet>
     <servlet>
         <servlet-name>GioHangController</servlet-name>
-        <servlet-class>Controll.GioHangController</servlet-class>
+        <servlet-class>Controll.ThemGioHangController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ThanhToanController</servlet-name>
+        <servlet-class>Controll.ThanhToanController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>GioHangController</servlet-name>
         <url-pattern>/giohang</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThanhToanController</servlet-name>
+        <url-pattern>/thanhtoan</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

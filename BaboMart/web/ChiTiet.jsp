@@ -179,7 +179,11 @@
                             <img class="product__details__pic__item--large"
                                 src="${sanpham.getImgUrl()}" alt="">
                         </div>
-
+                        </div>
+                        </div>
+                       <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>${sanpham.getTensanpham()}</h3>
                         <div class="product__details__price">${sanpham.getGiagoc()}</div>
                         <p>${sanpham.getMotangan()}</p>
                         <div class="product__details__quantity">

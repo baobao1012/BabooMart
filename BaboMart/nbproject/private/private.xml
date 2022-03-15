@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Entity/SanPham.java</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/DAO/SanPhamDAO.java</file>
             <file>file:/D:/2022/PRJ321/BaboMart/web/SanPham.jsp</file>
-            <file>file:/D:/2022/PRJ321/BaboMart/web/assets/css/main.css</file>
-            <file>file:/D:/2022/PRJ321/BaboMart/web/assets/bootstrap/css/bootstrap.min.css</file>
-            <file>file:/D:/2022/PRJ321/BaboMart/web/css/style.css</file>
-            <file>file:/D:/2022/PRJ321/BaboMart/web/VeChungToi.jsp</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Entity/GioHang.java</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/web/GioHang.jsp</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Controll/ThanhToanController.java</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/web/ChiTiet.jsp</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Controll/SearchController.java</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Controll/HomeController.java</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Controll/SanPhamController.java</file>
+            <file>file:/D:/2022/PRJ321/BaboMart/src/java/Entity/DonHangChiTiet.java</file>
         </group>
     </open-files>
 </project-private>
