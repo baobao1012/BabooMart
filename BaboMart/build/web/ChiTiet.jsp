@@ -82,13 +82,13 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="header__logo">
-                            <a href="./Home.jsp"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
+                            <a href="Home"><img src="img/RPReplay_Final1646660780-_1_.gif" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <nav class="header__menu">
                             <ul>
-                                <li ><a href="${homectr}">Trang Chủ</a></li>
+                                <li ><a href="Home">Trang Chủ</a></li>
                                 <li><a href="SanPham">Sản Phẩm</a></li>
                                 <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
                                 </li>
@@ -101,7 +101,7 @@
                         <div class="header__cart">
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart"></i> </a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
                             </ul>
 
                         </div>
@@ -158,7 +158,7 @@
                         <div class="breadcrumb__text">
                             <h2>BaBooMart</h2>
                             <div class="breadcrumb__option">
-                                <a href="./Home.jsp">Trang chủ</a>
+                                <a href="Home">Trang chủ</a>
                                 <span>Sản Phẩm</span>
                             </div>
                         </div>
@@ -179,29 +179,7 @@
                             <img class="product__details__pic__item--large"
                                 src="${sanpham.getImgUrl()}" alt="">
                         </div>
-<!--                        <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="img/product/details/thumb-1.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/thumb-2.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
-                                src="img/product/details/thumb-3.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
-                                src="img/product/details/thumb-4.jpg" alt="">
-                        </div>-->
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="product__details__text">
-                        <h3>${sanpham.getTensanpham()}</h3>
-<!--                        <div class="product__details__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <span>(18 reviews)</span>
-                        </div>-->
+
                         <div class="product__details__price">${sanpham.getGiagoc()}</div>
                         <p>${sanpham.getMotangan()}</p>
                         <div class="product__details__quantity">
@@ -212,8 +190,8 @@
                             </div>
                         </div>
                         
-                        <a href="#" class="primary-btn">Thêm Vào Giỏ Hàng</a>
-                        <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <a href="giohang?Masanpham=${sanpham.getMasanpham()}" class="primary-btn">Thêm Vào Giỏ Hàng</a>
+                        <a href="#" class="heart-icon"><span class="fa fa-heart"></span></a>
                         <ul>
                             <li><b>Availability</b> <span>In Stock</span></li>
                             <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>

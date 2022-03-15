@@ -89,7 +89,7 @@
                     <div class="col-lg-6">
                         <nav class="header__menu">
                             <ul>
-                                <li class="active" ><a href="${homectr}">Trang Chủ</a></li>
+                                <li class="active" ><a href="Home">Trang Chủ</a></li>
                                 <li ><a href="SanPham">Sản Phẩm</a></li>
                                 <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
                                 </li>
@@ -102,7 +102,7 @@
                         <div class="header__cart">
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart"></i> </a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> </a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
                             </ul>
 
                         </div>
@@ -172,27 +172,27 @@
                     <div class="categories__slider owl-carousel">
                         <div class="col-lg-3">
                             <div class="categories__item set-bg" data-setbg="img/categories/nam1.jpg">
-                                <h5><a href="#">Thời Trang Nam</a></h5>
+                                <h5><a href="danhmuc?Madanhmuc=1">Thời Trang Nam</a></h5>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="categories__item set-bg" data-setbg="img/categories/nu1.jpg">
-                                <h5><a href="#">Thời Trang Nữ</a></h5>
+                                <h5><a href="danhmuc?Madanhmuc=2">Thời Trang Nữ</a></h5>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="categories__item set-bg" data-setbg="img/categories/thietbidientu1.jpg">
-                                <h5><a href="#">Thiết Bị Điện Tử</a></h5>
+                                <h5><a href="danhmuc?Madanhmuc=4">Thiết Bị Điện Tử</a></h5>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="categories__item set-bg" data-setbg="img/categories/sacdep.jpg">
-                                <h5><a href="#">Sắc Đẹp</a></h5>
+                                <h5><a href="danhmuc?Madanhmuc=5">Sắc Đẹp</a></h5>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="categories__item set-bg" data-setbg="img/categories/chamsocnhacuajpg.jpg">
-                                <h5><a href="#">Chăm Sóc Nhà Cửa</a></h5>
+                                <h5><a href="danhmuc?Madanhmuc=7">Chăm Sóc Nhà Cửa</a></h5>
                             </div>
                         </div>
                     </div>

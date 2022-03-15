@@ -16,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -37,29 +38,30 @@ public class SanPhamController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         final int page_size = 9;
         List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
-        
-        request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
-        
+        HttpSession session = request.getSession();
+        session.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
+
         int page = 1;
         String pageStr = request.getParameter("page");
-        if(pageStr != null) {
+        if (pageStr != null) {
             page = Integer.parseInt(pageStr);
         }
-        
+
         SanPhamDAO sp = new SanPhamDAO();
         int totalRow = sp.getcount();
-        int totalPage = totalRow/page_size;
-        if(totalRow % page_size != 0){
+        int totalPage = totalRow / page_size;
+        if (totalRow % page_size != 0) {
             totalPage += 1;
         }
         List<SanPham> listSanPham1 = new SanPhamDAO().getAllSanPhamPhanTrang(page, page_size);
         List<SanPham> listSanPham = new SanPhamDAO().getAllSanPham();
         request.setAttribute("listSanPham1", listSanPham1);
-         request.setAttribute("listSanPham", listSanPham);
+        request.setAttribute("listSanPham", listSanPham);
         request.setAttribute("totalPage", totalPage);
         request.setAttribute("page", page);
+        session.setAttribute("UrlHistory", "SanPham");
         request.getRequestDispatcher("SanPham.jsp").forward(request, response);
-        
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

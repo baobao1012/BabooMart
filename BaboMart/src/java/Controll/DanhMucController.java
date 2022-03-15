@@ -37,11 +37,11 @@ public class DanhMucController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             int Madanhmuc = Integer.parseInt(request.getParameter("Madanhmuc"));
-            List<SanPham> listSanPham = new SanPhamDAO().getSanPhamTuDanhMuc(Madanhmuc);
+            List<SanPham> listSanPham1 = new SanPhamDAO().getSanPhamTuDanhMuc(Madanhmuc);
             List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
         
         request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
-            request.setAttribute("listSanPham", listSanPham);
+            request.setAttribute("listSanPham1", listSanPham1);
             request.getRequestDispatcher("SanPham.jsp").forward(request, response);
             
         }

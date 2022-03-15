@@ -7,7 +7,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!DOCTYPE html>
+
 <html lang="zxx">
 
     <head>
@@ -19,8 +19,8 @@
         <title>Sản Phẩm</title>
 
         <!-- Google Font -->
-         
-	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
         <!-- Css Styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -41,7 +41,7 @@
             <div class="loader"></div>
         </div>
 
-       
+
 
         <!-- Header Section Begin -->
         <header class="header">
@@ -93,7 +93,7 @@
                         <nav class="header__menu">
                             <ul>
                                 <li ><a href="${homectr}">Trang Chủ</a></li>
-                                <li class="active"><a href="./SanPham.jsp">Sản Phẩm</a></li>
+                                <li class="active"><a href="SanPham">Sản Phẩm</a></li>
                                 <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
                                 </li>
 
@@ -104,8 +104,8 @@
                     <div class="col-lg-3">
                         <div class="header__cart">
                             <ul>
-                                <li><a href="#"><i class="fa fa-heart"></i> </a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> </a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i><span>1</span> </a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
                             </ul>
 
                         </div>
@@ -275,7 +275,7 @@
                                                         <ul class="product__item__pic__hover">
                                                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                             <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                            <li><a href="giohang?Masanpham=${p.getMasanpham()}"><i class="fa fa-shopping-cart"></i></a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="product__discount__item__text">
@@ -316,11 +316,11 @@
                                                 <ul class="product__item__pic__hover">
                                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="giohang?Masanpham=${p.getMasanpham()}"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__item__text">
-                                                <h6><a href="#">${b.getTensanpham()}</a></h6>
+                                                <h6><a href="chitiet?Masanpham=${b.getMasanpham()}">${b.getTensanpham()}</a></h6>
                                                 <h5>${b.getGiagoc()}</h5>
                                             </div>
                                         </div>
@@ -352,7 +352,7 @@
         </section>
         <!-- Product Section End -->
 
-       <!-- Footer Section Begin -->
+        <!-- Footer Section Begin -->
         <footer class="footer spad">
             <div class="container">
                 <div class="row">

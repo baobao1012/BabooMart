@@ -88,7 +88,7 @@
                     <div class="col-lg-6">
                         <nav class="header__menu">
                             <ul>
-                                <li ><a href="./Home.jsp">Trang Chủ</a></li>
+                                <li ><a href="./Home">Trang Chủ</a></li>
                                 <li ><a href="SanPham">Sản Phẩm</a></li>
                                 <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
                                 </li>
@@ -101,7 +101,7 @@
                         <div class="header__cart">
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> </a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
                             </ul>
 
                         </div>

@@ -20,6 +20,10 @@
         <servlet-name>ChiTietController</servlet-name>
         <servlet-class>Controll.ChiTietController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GioHangController</servlet-name>
+        <servlet-class>Controll.GioHangController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>ChiTietController</servlet-name>
         <url-pattern>/chitiet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GioHangController</servlet-name>
+        <url-pattern>/giohang</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

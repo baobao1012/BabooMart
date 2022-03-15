@@ -36,6 +36,7 @@ public class ChiTietController extends HttpServlet {
             int Masanpham =  Integer.parseInt(request.getParameter("Masanpham"));
             SanPham sanpham = new SanPhamDAO().getMasanpham(Masanpham);
             request.setAttribute("sanpham", sanpham);
+            request.getSession().setAttribute("UrlHistory", "chitiet?Masanpham="+Masanpham);
             request.getRequestDispatcher("ChiTiet.jsp").forward(request, response);
         }
     }
