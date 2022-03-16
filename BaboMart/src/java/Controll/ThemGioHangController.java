@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author baobao
  */
+@WebServlet(name = "ThemGioHangController", urlPatterns = {"/themgiohang"})
 public class ThemGioHangController extends HttpServlet {
 
     /**
@@ -40,23 +42,24 @@ public class ThemGioHangController extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             int Masanpham = Integer.parseInt(request.getParameter("Masanpham"));
             HttpSession session = request.getSession();
-            Map<Integer, GioHang> giohang = (Map<Integer, GioHang>) session.getAttribute("giohang");
-            if (giohang == null) {
-                giohang = new LinkedHashMap<>();
+            Map<Integer, GioHang> giohang1 = (Map<Integer, GioHang>) session.getAttribute("giohang1");
+            if(giohang1 == null){
+                giohang1 = new LinkedHashMap<>();
             }
-            if (giohang.containsKey(Masanpham)) {
-                //da nam trong gio hang
-                int soluongcu = giohang.get(Masanpham).getSoluong();
-                giohang.get(Masanpham).setSoluong(soluongcu + 1);
-
-            } else {
-                //khong nam trong gio hang
+            
+            //Lay san pham ung voi masanpham nhan duoc
+            if(giohang1.containsKey(Masanpham)){//da co tren giohang
+                int sanphamcu = giohang1.get(Masanpham).getSoluong();
+                giohang1.get(Masanpham).setSoluong(sanphamcu + 1);
+            }
+            else{//khong co tren gio hang
                 SanPham sanpham = new SanPhamDAO().getMasanpham(Masanpham);
-                giohang.put(Masanpham, GioHang.builder().sanpham(sanpham).Soluong(1).build());
+                giohang1.put(Masanpham, GioHang.builder().sanpham(sanpham).Soluong(1).build());
+                
             }
             //luu len session
-            session.setAttribute("giohang", giohang);
-            String urlHistory = (String)session.getAttribute("UrlHistory");
+            session.setAttribute("giohang1", giohang1);
+           String urlHistory = (String)session.getAttribute("UrlHistory");
             if(urlHistory == null)
                 urlHistory="SanPham";
             response.sendRedirect(urlHistory);

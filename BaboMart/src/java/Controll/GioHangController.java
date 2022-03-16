@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,7 +21,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author baobao
  */
-public class GioHangController extends HttpServlet {
+@WebServlet(name = "GiohangController", urlPatterns = {"/giohang1"})
+public class GiohangController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,13 +38,23 @@ public class GioHangController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-           HttpSession session = request.getSession();
-           Map<Integer,GioHang> giohang = (Map<Integer,GioHang>) session.getAttribute("giohang");
-           if (giohang == null){
-               giohang = new LinkedHashMap<>();
-           }
-           request.setAttribute("giohang", giohang);
-           request.getRequestDispatcher("GioHang.jsp").forward(request, response);
+            HttpSession session = request.getSession();
+            Map<Integer,GioHang> giohang1 = (Map<Integer,GioHang>) session.getAttribute("giohang1");
+            if(giohang1 == null){
+                giohang1 = new LinkedHashMap<>();
+            }
+            
+            //tinh tong tien
+            double tongtien = 0;
+            for (Map.Entry<Integer, GioHang> entry : giohang1.entrySet()) {
+                Integer Masanpham = entry.getKey();
+                GioHang giohang = entry.getValue();
+                tongtien += giohang.getSoluong()*giohang.getSanpham().getGiagoc();
+            }
+            request.setAttribute("tongtien", tongtien);
+            
+            request.setAttribute("giohang1", giohang1);
+            request.getRequestDispatcher("GioHang.jsp").forward(request, response);
         }
     }
 

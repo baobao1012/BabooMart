@@ -170,89 +170,97 @@
             </div>
         </section>
         <!-- Breadcrumb Section End -->
-         <!-- Shoping Cart Section Begin -->
-    <section class="shoping-cart spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="shoping__product">Sản Phẩm</th>
-                                    <th>Giá</th>
-                                    <th>Số Lượng</th>
-                                    <th>Tổng</th>
-                                    <th>Chỉnh Sửa</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <c:forEach items="${giohang}" var="a">
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="${a.value.sanpham.getImgUrl()}">
-                                        <h5>${a.value.sanpham.getTensanpham()}</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        ${a.value.sanpham.getGiaGoc()}
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="${a.value.sanpham.getSoluong()}">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        ${a.value.sanpham.getGiaGoc()*C.value.sanpham.getSoluong()}
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                                </c:forEach>
-                                
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__btns">
-                        <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
-                            Upadate Cart</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shoping__continue">
-                        <div class="shoping__discount">
-                            <h5>Discount Codes</h5>
-                            <form action="#">
-                                <input type="text" placeholder="Enter your coupon code">
-                                <button type="submit" class="site-btn">APPLY COUPON</button>
-                            </form>
+        <!-- Shoping Cart Section Begin -->
+        <section class="shoping-cart spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="shoping__cart__table">
+                            <c:if test="${sessionScope.giohang1 == null||sessionScope.giohang1.size() == 0}">
+                                Không có sản phẩm trong giỏ hàng
+                            </c:if>
+                            <c:if test="${sessionScope.giohang1.size() != 0}">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="shoping__product">Sản Phẩm</th>
+                                            <th>Giá</th>
+                                            <th>Số Lượng</th>
+                                            <th>Tổng</th>
+
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <c:forEach items="${giohang1}" var="a">
+                                        <form action="capnhatsoluong">
+                                            <tr>
+                                            <input type="hidden" name="Masanpham" value="${a.value.sanpham.getMasanpham()}"/>
+                                                <td class="shoping__cart__item">
+                                                    <img src="${a.value.sanpham.getImgUrl()}" width="150">
+                                                    <h5>${a.value.sanpham.getTensanpham()}</h5>
+                                                </td>
+                                                <td class="shoping__cart__price">
+                                                    ${a.value.sanpham.getGiagoc()}
+                                                </td>
+                                                <td class="shoping__cart__quantity">
+                                                    <div class="quantity">
+
+                                                        <input onchange="this.form.submit()" type="number" name="soluong" value=${a.value.getSoluong()}>
+
+                                                    </div>
+                                                </td>
+                                                <td class="shoping__cart__total">
+                                                    ${a.value.sanpham.getGiagoc()*a.value.getSoluong()}
+                                                </td>
+                                                <td class="shoping__cart__item__close">
+                                                    <span><a href="xoa-giohang?Masanpham=${a.value.sanpham.getMasanpham()}">x</a></span>
+                                                </td>
+                                            </tr>
+                                        </form>
+                                    </c:forEach>
+
+                                    </tbody>
+                                </table>
+                            </c:if>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="shoping__checkout">
-                        <h5>Cart Total</h5>
-                        <ul>
-                            <li>Subtotal <span>$454.98</span></li>
-                            <li>Total <span>$454.98</span></li>
-                        </ul>
-                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="shoping__cart__btns">
+
+                            <a href="SanPham" class="primary-btn cart-btn cart-btn-right">
+                                Tiếp Tục Mua Sắm</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="shoping__continue">
+                            <div class="shoping__discount">
+                                <h5>Discount Codes</h5>
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your coupon code">
+                                    <button type="submit" class="site-btn">APPLY COUPON</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="shoping__checkout">
+                            <h5>Tổng Tiền</h5>
+                            <ul>
+                                <!--                            <li>Subtotal <span>$454.98</span></li>-->
+                                <li>Tổng <span>${tongtien}</span></li>
+                            </ul>
+                            <a href="thanhtoan1" class="primary-btn">Thanh Toán</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Shoping Cart Section End -->
+        </section>
+        <!-- Shoping Cart Section End -->
 
-    <!-- Footer Section Begin -->
+        <!-- Footer Section Begin -->
         <footer class="footer spad">
             <div class="container">
                 <div class="row">
@@ -319,18 +327,18 @@
             </div>
         </footer>
         <!-- Footer Section End -->
-        
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
 
 
-</body>
+    </body>
 
 </html>

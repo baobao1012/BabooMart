@@ -28,6 +28,10 @@
         <servlet-name>ThanhToanController</servlet-name>
         <servlet-class>Controll.GioHangController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ThanhtoanController</servlet-name>
+        <servlet-class>Controll.ThanhToanController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>ThanhToanController</servlet-name>
         <url-pattern>/thanhtoan</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThanhtoanController</servlet-name>
+        <url-pattern>/thanhtoan1</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
