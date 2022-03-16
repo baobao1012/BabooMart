@@ -105,7 +105,7 @@
                         <div class="header__cart">
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart"></i> </a></li>
-                                <li><a href="thanhtoan"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
+                                <li><a href="giohang"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
                             </ul>
 
                         </div>
@@ -275,7 +275,7 @@
                                                         <ul class="product__item__pic__hover">
                                                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                             <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                            <li><a href="giohang?Masanpham=${p.getMasanpham()}"><i class="fa fa-shopping-cart"></i></a></li>
+                                                            <li><a href="themgiohang?Masanpham=${p.getMasanpham()}"><i class="fa fa-shopping-cart"></i></a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="product__discount__item__text">
@@ -316,7 +316,7 @@
                                                 <ul class="product__item__pic__hover">
                                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="giohang?Masanpham=${p.getMasanpham()}"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="themgiohang?Masanpham=${p.getMasanpham()}"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__item__text">

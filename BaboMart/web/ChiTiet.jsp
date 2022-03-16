@@ -101,7 +101,7 @@
                         <div class="header__cart">
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart"></i> </a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>${sessionScope.giohang.size()}</span> </a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>${sessionScope.themgiohang.size()}</span> </a></li>
                             </ul>
 
                         </div>
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                         
-                        <a href="giohang?Masanpham=${sanpham.getMasanpham()}" class="primary-btn">Thêm Vào Giỏ Hàng</a>
+                        <a href="themgiohang?Masanpham=${sanpham.getMasanpham()}" class="primary-btn">Thêm Vào Giỏ Hàng</a>
                         <a href="#" class="heart-icon"><span class="fa fa-heart"></span></a>
                         <ul>
                             <li><b>Availability</b> <span>In Stock</span></li>

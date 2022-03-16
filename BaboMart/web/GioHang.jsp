@@ -188,7 +188,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <c:forEach items="${thanhtoan}" var="a">
+                                <c:forEach items="${giohang}" var="a">
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img src="${a.value.sanpham.getImgUrl()}">

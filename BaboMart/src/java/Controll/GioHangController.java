@@ -5,9 +5,7 @@
  */
 package Controll;
 
-import DAO.SanPhamDAO;
 import Entity.GioHang;
-import Entity.SanPham;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.LinkedHashMap;
@@ -38,28 +36,13 @@ public class GioHangController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            int Masanpham = Integer.parseInt(request.getParameter("Masanpham"));
-            HttpSession session = request.getSession();
-            Map<Integer, GioHang> giohang = (Map<Integer, GioHang>) session.getAttribute("giohang");
-            if (giohang == null) {
-                giohang = new LinkedHashMap<>();
-            }
-            if (giohang.containsKey(Masanpham)) {
-                //da nam trong gio hang
-                int soluongcu = giohang.get(Masanpham).getSoluong();
-                giohang.get(Masanpham).setSoluong(soluongcu + 1);
-
-            } else {
-                //khong nam trong gio hang
-                SanPham sanpham = new SanPhamDAO().getMasanpham(Masanpham);
-                giohang.put(Masanpham, GioHang.builder().sanpham(sanpham).Soluong(1).build());
-            }
-            //luu len session
-            session.setAttribute("giohang", giohang);
-            String urlHistory = (String)session.getAttribute("UrlHistory");
-            if(urlHistory == null)
-                urlHistory="SanPham";
-            response.sendRedirect(urlHistory);
+           HttpSession session = request.getSession();
+           Map<Integer,GioHang> giohang = (Map<Integer,GioHang>) session.getAttribute("giohang");
+           if (giohang == null){
+               giohang = new LinkedHashMap<>();
+           }
+           request.setAttribute("giohang", giohang);
+           request.getRequestDispatcher("GioHang.jsp").forward(request, response);
         }
     }
 
