@@ -127,6 +127,8 @@ public class ThanhToanController extends HttpServlet {
        //luu donhangchitiet
        
        new DonHangChiTietDAO.savecart(Madonhang,giohang1);
+       session.removeAttribute("giohang1");
+       response.sendRedirect("Thanks");
     }
 
     /**
