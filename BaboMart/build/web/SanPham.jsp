@@ -75,7 +75,15 @@
                                     </ul>
                                 </div>
                                 <div class="header__top__right__auth">
-                                    <a href="#"><i class="fa fa-user"></i> Đăng Nhập</a>
+                                    <c:choose>
+                                        <c:when test="${sessionScope.nguoidung != null}">
+                                            <i class="fa fa-user"> ${sessionScope.nguoidung.getHoten()}</i>
+                                            <a href="dangxuat"><i class="fa fa-user"></i> Đăng Xuất</a>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <a href="dangnhap"><i class="fa fa-user"></i> Đăng Nhập</a>
+                                        </c:otherwise>
+                                    </c:choose>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +268,7 @@
                     <div class="col-lg-9 col-md-7">
                         <div class="product__discount">
                             <div class="section-title product__discount__title">
-                                <h2>Khuyến Mãi</h2> 
+                                <h2>Sản Phẩm Nổi Bật</h2> 
                             </div>
                             <div class="row">
                                 <div class="product__discount__slider owl-carousel">   
@@ -270,7 +278,7 @@
                                                 <div class="product__discount__item">
                                                     <div class="product__discount__item__pic set-bg"
                                                          data-setbg="${p.getImgUrl()}">
-                                                        <div class="product__discount__percent">-${p.getKhuyenmai()}%</div>
+<!--                                                        <div class="product__discount__percent">-${p.getKhuyenmai()}%</div>-->
                                                         <ul class="product__item__pic__hover">
                                                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                                             <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -280,7 +288,7 @@
                                                     <div class="product__discount__item__text">
 
                                                         <h5><a href="chitiet?Masanpham=${p.getMasanpham()}">${p.getTensanpham()}</a></h5>
-                                                        <div class="product__item__price">${p.getKhuyenmai()}<span>${p.getGiagoc()}</span></div>
+                                                        <div class="product__item__price">${p.getGiagoc()}</div>
                                                     </div>
                                                 </div>
                                             </div>

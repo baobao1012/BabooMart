@@ -74,7 +74,15 @@
                                     </ul>
                                 </div>
                                 <div class="header__top__right__auth">
-                                    <a href="#"><i class="fa fa-user"></i> Đăng Nhập</a>
+                                    <c:choose>
+                                        <c:when test="${sessionScope.nguoidung != null}">
+                                            <i class="fa fa-user"> ${sessionScope.nguoidung.getHoten()}</i>
+                                            <a href="dangxuat"><i class="fa fa-user"></i> Đăng Xuất</a>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <a href="dangnhap"><i class="fa fa-user"></i> Đăng Nhập</a>
+                                        </c:otherwise>
+                                    </c:choose>
                                 </div>
                             </div>
                         </div>
