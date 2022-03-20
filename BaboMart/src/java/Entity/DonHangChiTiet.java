@@ -5,10 +5,24 @@
  */
 package Entity;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  *
  * @author baobao
  */
+@Builder
+@Getter
+@Setter
+@ToString
+
 public class DonHangChiTiet {
-    
+    private int Madonhangchitiet;
+    private int Madonhang;
+    private String Tensanpham;
+    private double Giaban;
+    private int Soluong;
 }

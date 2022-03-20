@@ -32,6 +32,10 @@
         <servlet-name>ThanhtoanController</servlet-name>
         <servlet-class>Controll.ThanhToanController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ThanksController</servlet-name>
+        <servlet-class>Controll.ThanksController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>ThanhtoanController</servlet-name>
         <url-pattern>/thanhtoan1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThanksController</servlet-name>
+        <url-pattern>/Thanks</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
