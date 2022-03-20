@@ -6,6 +6,7 @@
 package Controll;
 
 import Entity.GioHang;
+import Entity.NguoiDung;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.LinkedHashMap;
@@ -40,6 +41,12 @@ public class XoaController extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             int Masanpham = Integer.parseInt(request.getParameter("Masanpham"));
             HttpSession session = request.getSession();
+            //check dang nhap
+            NguoiDung nguoidung = (NguoiDung) session.getAttribute("nguoidung");
+            if(nguoidung == null){
+                response.sendRedirect("dangnhap");
+                return;
+            }
             Map<Integer,GioHang> giohang1 = (Map<Integer,GioHang>) session.getAttribute("giohang1");
             if(giohang1 == null){
                 giohang1 = new LinkedHashMap<>();

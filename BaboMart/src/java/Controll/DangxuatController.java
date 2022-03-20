@@ -50,7 +50,7 @@ public class DangxuatController extends HttpServlet {
             }
          
         }
-            
+            request.getSession().removeAttribute("giohang1");
             response.sendRedirect("dangnhap");
         }
     }

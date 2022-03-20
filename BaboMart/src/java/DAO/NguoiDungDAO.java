@@ -42,6 +42,7 @@ public class NguoiDungDAO {
                                                 .Diachi(rs.getString(6))
                                                 .SoDT(rs.getString(8))
                                                 .Email(rs.getString(7))
+                                                .Phanquyen(rs.getString(9))
                                                 .build();
                 return nguoidung;
             }

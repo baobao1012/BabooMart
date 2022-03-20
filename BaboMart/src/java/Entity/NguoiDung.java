@@ -19,6 +19,8 @@ import lombok.ToString;
 @Setter
 @ToString
 public class NguoiDung {
+    public static final String ADMIN = "ADMIN";
+    public static final String USER = "USER";
     private int Manguoidung;
     private String Taikhoan;
     private String Matkhau;
@@ -27,4 +29,5 @@ public class NguoiDung {
     private String Diachi;
     private String Email;
     private String SoDT;
+    private String Phanquyen;
 }
