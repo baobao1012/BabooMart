@@ -36,6 +36,14 @@
         <servlet-name>ThanksController</servlet-name>
         <servlet-class>Controll.ThanksController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DangNhapController</servlet-name>
+        <servlet-class>Controll.DangNhapController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DangxuatController</servlet-name>
+        <servlet-class>Controll.DangxuatController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -71,6 +79,14 @@
     <servlet-mapping>
         <servlet-name>ThanksController</servlet-name>
         <url-pattern>/Thanks</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DangNhapController</servlet-name>
+        <url-pattern>/dangnhap</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DangxuatController</servlet-name>
+        <url-pattern>/dangxuat</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -51,7 +51,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__left">
                                 <ul>
-                                    <li><i class="fas fa-envelope"></i> baboomart@gmail.com</li>
+                                    <li><i class="fa fa-envelope"></i> baboomart@gmail.com</li>
                                     <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>
                                 </ul>
                             </div>
@@ -59,11 +59,11 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__right">
                                 <div class="header__top__right__social">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook">
+                                    <a href="https://www.facebook.com/"><i class="fa fa-facebook">
                                         </i></a>
-                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://vn.linkedin.com"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://vn.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
                                 </div>
                                 <div class="header__top__right__language">
                                     <img src="img/language.png" alt="">
@@ -94,9 +94,7 @@
                             <ul>
                                 <li ><a href="${homectr}">Trang Chủ</a></li>
                                 <li ><a href="SanPham">Sản Phẩm</a></li>
-                                <li><a href="./VeChungToi.jsp">Giới Thiệu</a>
-                                </li>
-
+                                
                                 <li><a href="./LienHe.jsp">Liên Hệ</a></li>
                             </ul>
                         </nav>
@@ -239,10 +237,10 @@
                                 <button type="submit" class="site-btn">Đồng Ý</button>
                             </form>
                             <div class="footer__widget__social">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
                             </div>
                         </div>
                     </div>
