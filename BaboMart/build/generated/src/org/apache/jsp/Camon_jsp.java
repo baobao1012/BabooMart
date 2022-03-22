@@ -11,8 +11,10 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_choose;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_url_var_value_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_otherwise;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_when_test;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -21,13 +23,17 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _jspx_tagPool_c_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_c_choose = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_c_url_var_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_c_otherwise = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_c_when_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
-    _jspx_tagPool_c_forEach_var_items.release();
+    _jspx_tagPool_c_choose.release();
     _jspx_tagPool_c_url_var_value_nobody.release();
+    _jspx_tagPool_c_otherwise.release();
+    _jspx_tagPool_c_when_test.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -106,7 +112,7 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"col-lg-6 col-md-6\">\n");
       out.write("                            <div class=\"header__top__left\">\n");
       out.write("                                <ul>\n");
-      out.write("                                    <li><i class=\"fas fa-envelope\"></i> baboomart@gmail.com</li>\n");
+      out.write("                                    <li><i class=\"fa fa-envelope\"></i> baboomart@gmail.com</li>\n");
       out.write("                                    <li>Miễn phí ship cho mọi đơn hàng dưới 99k</li>\n");
       out.write("                                </ul>\n");
       out.write("                            </div>\n");
@@ -114,11 +120,11 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"col-lg-6 col-md-6\">\n");
       out.write("                            <div class=\"header__top__right\">\n");
       out.write("                                <div class=\"header__top__right__social\">\n");
-      out.write("                                    <a href=\"https://www.facebook.com/\"><i class=\"fab fa-facebook\">\n");
+      out.write("                                    <a href=\"https://www.facebook.com/\"><i class=\"fa fa-facebook\">\n");
       out.write("                                        </i></a>\n");
-      out.write("                                    <a href=\"https://twitter.com/\"><i class=\"fab fa-twitter\"></i></a>\n");
-      out.write("                                    <a href=\"https://vn.linkedin.com\"><i class=\"fab fa-linkedin\"></i></a>\n");
-      out.write("                                    <a href=\"https://www.pinterest.com/\"><i class=\"fab fa-pinterest-p\"></i></a>\n");
+      out.write("                                    <a href=\"https://twitter.com/\"><i class=\"fa fa-twitter\"></i></a>\n");
+      out.write("                                    <a href=\"https://vn.linkedin.com\"><i class=\"fa fa-linkedin\"></i></a>\n");
+      out.write("                                    <a href=\"https://www.pinterest.com/\"><i class=\"fa fa-pinterest-p\"></i></a>\n");
       out.write("                                </div>\n");
       out.write("                                <div class=\"header__top__right__language\">\n");
       out.write("                                    <img src=\"img/language.png\" alt=\"\">\n");
@@ -130,7 +136,10 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    </ul>\n");
       out.write("                                </div>\n");
       out.write("                                <div class=\"header__top__right__auth\">\n");
-      out.write("                                    <a href=\"#\"><i class=\"fa fa-user\"></i> Đăng Nhập</a>\n");
+      out.write("                                    ");
+      if (_jspx_meth_c_choose_0(_jspx_page_context))
+        return;
+      out.write("\n");
       out.write("                                </div>\n");
       out.write("                            </div>\n");
       out.write("                        </div>\n");
@@ -151,9 +160,7 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${homectr}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\">Trang Chủ</a></li>\n");
       out.write("                                <li ><a href=\"SanPham\">Sản Phẩm</a></li>\n");
-      out.write("                                <li><a href=\"./VeChungToi.jsp\">Giới Thiệu</a>\n");
-      out.write("                                </li>\n");
-      out.write("\n");
+      out.write("                                \n");
       out.write("                                <li><a href=\"./LienHe.jsp\">Liên Hệ</a></li>\n");
       out.write("                            </ul>\n");
       out.write("                        </nav>\n");
@@ -238,91 +245,16 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <div class=\"col-lg-12\">\n");
       out.write("                        <h6>Đặt Hàng Thành Công. Cảm Ơn Bạn Đã Mua Hàng\n");
       out.write("                        </h6>\n");
+      out.write("                        \n");
+      out.write("                        <div class=\"text-center\">\n");
+      out.write("\n");
+      out.write("                            <a href=\"SanPham\" class=\"primary-btn cart-btn\">\n");
+      out.write("                                Tiếp Tục Mua Sắm</a>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
       out.write("                    </div>\n");
       out.write("                </div>\n");
-      out.write("                <div class=\"checkout__form\">\n");
-      out.write("                    <h4>Thông Tin Giao Hàng</h4>\n");
-      out.write("                    <form action=\"thanhtoan1\" method=\"POST\">\n");
-      out.write("                        <div class=\"row\">\n");
-      out.write("                            <div class=\"col-lg-8 col-md-6\">\n");
-      out.write("                                <div class=\"checkout__input\">\n");
-      out.write("                                            <label for=\"Tenkhachhang\">Họ Và Tên</label>\n");
-      out.write("                                                <input type=\"text\" id=\"Tenkhachhang\" name=\"Tenkhachhang\">\n");
-      out.write("                                        </div>\n");
-      out.write("\n");
-      out.write("                                <div class=\"checkout__input\">\n");
-      out.write("                                            <label for=\"Diachi\">Địa Chỉ</label>\n");
-      out.write("                                            <input type=\"text\" id=\"Diachi\" name=\"Diachi\">\n");
-      out.write("                                        </div>\n");
-      out.write("\n");
-      out.write("                                <div class=\"row\">\n");
-      out.write("                                    <div class=\"col-lg-6\">\n");
-      out.write("                                        <div class=\"checkout__input\">\n");
-      out.write("                                            <label for=\"SoDT\">Số điện thoại</label>\n");
-      out.write("                                            <input type=\"text\" id=\"SoDT\" name=\"SoDT\">\n");
-      out.write("                                        </div>\n");
-      out.write("                                    </div>\n");
-      out.write("                                    <div class=\"col-lg-6\">\n");
-      out.write("                                        <div class=\"checkout__input\">\n");
-      out.write("                                            <label for=\"Email\">Email</label>\n");
-      out.write("                                            <input type=\"text\" id=\"Email\" name=\"Email\">\n");
-      out.write("                                        </div>\n");
-      out.write("                                    </div>\n");
-      out.write("                                </div>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("                                <div class=\"checkout__input\">\n");
-      out.write("                                            <label for=\"Ghichu\">Ghi Chú</label>\n");
-      out.write("                                            <input type=\"text\" id=\"Ghichu\" name=\"Ghichu\">\n");
-      out.write("                                        </div>\n");
-      out.write("<!--                                <div>\n");
-      out.write("                                    <button type=\"submit\" class=\"site-btn\">Đồng Ý</button>\n");
-      out.write("                                </div>-->\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("                            </div>\n");
-      out.write("                            <div class=\"col-lg-4 col-md-6\">\n");
-      out.write("                                <div class=\"checkout__order\">\n");
-      out.write("                                    <h4>Giỏ Hàng</h4>\n");
-      out.write("                                    <div class=\"checkout__order__products\">Sản Phẩm <span>Tổng</span></div>\n");
-      out.write("                                    ");
-      if (_jspx_meth_c_forEach_0(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("                                    <div class=\"checkout__order__total\">Tổng Tiền<span>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${tongtien}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("</span></div>\n");
-      out.write("\n");
-      out.write("                                    <div class=\"checkout__input__checkbox\">\n");
-      out.write("                                        <label for=\"acc-or\">\n");
-      out.write("                                            Create an account?\n");
-      out.write("                                            <input type=\"checkbox\" id=\"acc-or\">\n");
-      out.write("                                            <span class=\"checkmark\"></span>\n");
-      out.write("                                        </label>\n");
-      out.write("                                    </div>\n");
-      out.write("                                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt\n");
-      out.write("                                        ut labore et dolore magna aliqua.</p>\n");
-      out.write("                                    <div class=\"checkout__input__checkbox\">\n");
-      out.write("                                        <label for=\"payment\">\n");
-      out.write("                                            Check Payment\n");
-      out.write("                                            <input type=\"checkbox\" id=\"payment\">\n");
-      out.write("                                            <span class=\"checkmark\"></span>\n");
-      out.write("                                        </label>\n");
-      out.write("                                    </div>\n");
-      out.write("                                    <div class=\"checkout__input__checkbox\">\n");
-      out.write("                                        <label for=\"paypal\">\n");
-      out.write("                                            Paypal\n");
-      out.write("                                            <input type=\"checkbox\" id=\"paypal\">\n");
-      out.write("                                            <span class=\"checkmark\"></span>\n");
-      out.write("                                        </label>\n");
-      out.write("                                    </div>\n");
-      out.write("                                    <button type=\"submit\" class=\"site-btn\">Đặt Hàng</button>\n");
-      out.write("                                </div>\n");
-      out.write("                            </div>\n");
-      out.write("                        </div>\n");
-      out.write("                    </form>\n");
-      out.write("                </div>\n");
+      out.write("                \n");
       out.write("            </div>\n");
       out.write("        </section>\n");
       out.write("        <!-- Checkout Section End -->\n");
@@ -373,10 +305,10 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                <button type=\"submit\" class=\"site-btn\">Đồng Ý</button>\n");
       out.write("                            </form>\n");
       out.write("                            <div class=\"footer__widget__social\">\n");
-      out.write("                                <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n");
-      out.write("                                <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n");
-      out.write("                                <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n");
-      out.write("                                <a href=\"#\"><i class=\"fab fa-pinterest\"></i></a>\n");
+      out.write("                                <a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\n");
+      out.write("                                <a href=\"#\"><i class=\"fa fa-instagram\"></i></a>\n");
+      out.write("                                <a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\n");
+      out.write("                                <a href=\"#\"><i class=\"fa fa-pinterest\"></i></a>\n");
       out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
@@ -442,47 +374,95 @@ public final class Camon_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_c_forEach_0(PageContext _jspx_page_context)
+  private boolean _jspx_meth_c_choose_0(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
-    //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
-    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
-    _jspx_th_c_forEach_0.setParent(null);
-    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${giohang1}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_c_forEach_0.setVar("a");
-    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
-    try {
-      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
-      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        do {
-          out.write("\n");
-          out.write("                                        <ul>\n");
-          out.write("                                            <li>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${a.value.sanpham.getTensanpham()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write(" <span>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${a.value.sanpham.getGiagoc()*a.value.getSoluong()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("</span></li>\n");
-          out.write("\n");
-          out.write("                                        </ul>\n");
-          out.write("                                    ");
-          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
-          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-            break;
-        } while (true);
-      }
-      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_c_forEach_0.doFinally();
-      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
+    //  c:choose
+    org.apache.taglibs.standard.tag.common.core.ChooseTag _jspx_th_c_choose_0 = (org.apache.taglibs.standard.tag.common.core.ChooseTag) _jspx_tagPool_c_choose.get(org.apache.taglibs.standard.tag.common.core.ChooseTag.class);
+    _jspx_th_c_choose_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_choose_0.setParent(null);
+    int _jspx_eval_c_choose_0 = _jspx_th_c_choose_0.doStartTag();
+    if (_jspx_eval_c_choose_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      do {
+        out.write("\n");
+        out.write("                                        ");
+        if (_jspx_meth_c_when_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("                                        ");
+        if (_jspx_meth_c_otherwise_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("                                    ");
+        int evalDoAfterBody = _jspx_th_c_choose_0.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
     }
+    if (_jspx_th_c_choose_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_choose.reuse(_jspx_th_c_choose_0);
+      return true;
+    }
+    _jspx_tagPool_c_choose.reuse(_jspx_th_c_choose_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_when_0(javax.servlet.jsp.tagext.JspTag _jspx_th_c_choose_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:when
+    org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_when_0 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _jspx_tagPool_c_when_test.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
+    _jspx_th_c_when_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_when_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_choose_0);
+    _jspx_th_c_when_0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.nguoidung != null}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
+    int _jspx_eval_c_when_0 = _jspx_th_c_when_0.doStartTag();
+    if (_jspx_eval_c_when_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      do {
+        out.write("\n");
+        out.write("                                            <i class=\"fa fa-user\"> ");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.nguoidung.getHoten()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("</i>\n");
+        out.write("                                            <a href=\"dangxuat\"><i class=\"fa fa-user\"></i> Đăng Xuất</a>\n");
+        out.write("                                        ");
+        int evalDoAfterBody = _jspx_th_c_when_0.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+    }
+    if (_jspx_th_c_when_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_0);
+      return true;
+    }
+    _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_otherwise_0(javax.servlet.jsp.tagext.JspTag _jspx_th_c_choose_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:otherwise
+    org.apache.taglibs.standard.tag.common.core.OtherwiseTag _jspx_th_c_otherwise_0 = (org.apache.taglibs.standard.tag.common.core.OtherwiseTag) _jspx_tagPool_c_otherwise.get(org.apache.taglibs.standard.tag.common.core.OtherwiseTag.class);
+    _jspx_th_c_otherwise_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_otherwise_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_choose_0);
+    int _jspx_eval_c_otherwise_0 = _jspx_th_c_otherwise_0.doStartTag();
+    if (_jspx_eval_c_otherwise_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      do {
+        out.write("\n");
+        out.write("                                            <a href=\"dangnhap\"><i class=\"fa fa-user\"></i> Đăng Nhập</a>\n");
+        out.write("                                        ");
+        int evalDoAfterBody = _jspx_th_c_otherwise_0.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+    }
+    if (_jspx_th_c_otherwise_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_otherwise.reuse(_jspx_th_c_otherwise_0);
+      return true;
+    }
+    _jspx_tagPool_c_otherwise.reuse(_jspx_th_c_otherwise_0);
     return false;
   }
 }

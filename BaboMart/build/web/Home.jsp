@@ -38,9 +38,9 @@
             <div class="loader"></div>
         </div>
 
-        
 
-         <!-- Header Section Begin -->
+
+        <!-- Header Section Begin -->
         <header class="header">
             <div class="header__top">
                 <div class="container">
@@ -81,7 +81,7 @@
                                             <a href="dangnhap"><i class="fa fa-user"></i> Đăng Nhập</a>
                                         </c:otherwise>
                                     </c:choose>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -100,9 +100,12 @@
                             <ul>
                                 <li class="active" ><a href="Home">Trang Chủ</a></li>
                                 <li ><a href="SanPham">Sản Phẩm</a></li>
-                                
+
 
                                 <li><a href="./LienHe.jsp">Liên Hệ</a></li>
+                                    <c:if test="${sessionScope.nguoidung.getPhanquyen() eq 'ADMIN'}">
+                                    <li><a href="/admin/dashboard">Quản Lý Sản Phẩm</a></li>
+                                    </c:if>
                             </ul>
                         </nav>
                     </div>
@@ -639,7 +642,7 @@
         </section>
         <!-- Blog Section End -->
 
-       <!-- Footer Section Begin -->
+        <!-- Footer Section Begin -->
         <footer class="footer spad">
             <div class="container">
                 <div class="row">

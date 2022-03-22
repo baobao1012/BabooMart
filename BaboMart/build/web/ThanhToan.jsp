@@ -223,7 +223,7 @@
                                             <input type="text" id="Ghichu" name="Ghichu">
                                         </div>
 <!--                                <div>
-                                    <button type="submit" class="site-btn">Đồng Ý</button>
+                                    <button type="submit" class="site-btn">Đặt Hàng</button>
                                 </div>-->
 
 
