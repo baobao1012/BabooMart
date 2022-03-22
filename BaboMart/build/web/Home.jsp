@@ -100,11 +100,9 @@
                             <ul>
                                 <li class="active" ><a href="Home">Trang Chủ</a></li>
                                 <li ><a href="SanPham">Sản Phẩm</a></li>
-
-
                                 <li><a href="./LienHe.jsp">Liên Hệ</a></li>
                                     <c:if test="${sessionScope.nguoidung.getPhanquyen() eq 'ADMIN'}">
-                                    <li><a href="/admin/dashboard">Quản Lý Sản Phẩm</a></li>
+                                    <li><a href="quanly">Quản Lý Sản Phẩm</a></li>
                                     </c:if>
                             </ul>
                         </nav>

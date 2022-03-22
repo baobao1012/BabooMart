@@ -44,6 +44,22 @@
         <servlet-name>DangxuatController</servlet-name>
         <servlet-class>Controll.DangxuatController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>QuanlyController</servlet-name>
+        <servlet-class>Controll.QuanlyController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteController</servlet-name>
+        <servlet-class>Controll.DeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddController</servlet-name>
+        <servlet-class>Controll.AddController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadController</servlet-name>
+        <servlet-class>Controll.LoadController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -87,6 +103,22 @@
     <servlet-mapping>
         <servlet-name>DangxuatController</servlet-name>
         <url-pattern>/dangxuat</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuanlyController</servlet-name>
+        <url-pattern>/quanly</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteController</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddController</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadController</servlet-name>
+        <url-pattern>/load</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

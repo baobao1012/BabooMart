@@ -10,6 +10,7 @@ import Entity.SanPham;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -28,7 +29,7 @@ public class SanPhamDAO {
             Connection co = new DBcontext().getConnection();
             PreparedStatement ps = co.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
 //                SanPham sanpham = new SanPham();
 //                sanpham.setGiagoc(rs.getInt(4));
 //                sanpham.setImgUrl(rs.getString(6));
@@ -40,14 +41,14 @@ public class SanPhamDAO {
 //                sanpham.setTensanpham(rs.getString(3));
 //               sanpham.setSoluong(rs.getInt(9));
                 SanPham sanpham = SanPham.builder().Masanpham(rs.getInt(1))
-                                                    .Madanhmuc(rs.getInt(2))
-                                                    .Tensanpham(rs.getString(3))
-                                                    .Giagoc(rs.getFloat(4))
-                                                    .Khuyenmai(rs.getFloat(5))
-                                                    .Motangan(rs.getString(7))
-                                                    .ImgUrl(rs.getString(6))
-                                                    .Motachitiet(rs.getString(8))
-                                                    .Soluong(rs.getInt(9)).build();
+                        .Madanhmuc(rs.getInt(2))
+                        .Tensanpham(rs.getString(3))
+                        .Giagoc(rs.getFloat(4))
+                        .Khuyenmai(rs.getFloat(5))
+                        .Motangan(rs.getString(7))
+                        .ImgUrl(rs.getString(6))
+                        .Motachitiet(rs.getString(8))
+                        .Soluong(rs.getInt(9)).build();
                 list.add(sanpham);
             }
         } catch (Exception ex) {
@@ -55,10 +56,10 @@ public class SanPhamDAO {
         }
         return list;
     }
-    
+
     public static void main(String[] args) {
         SanPhamDAO a = new SanPhamDAO();
-       List<SanPham> list = a.getAllSanPham();
+        List<SanPham> list = a.getAllSanPham();
         for (SanPham sanPham : list) {
             System.out.println(sanPham);
         }
@@ -72,7 +73,7 @@ public class SanPhamDAO {
             PreparedStatement ps = co.prepareStatement(sql);
             ps.setInt(1, Madanhmuc);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
 //                SanPham sanpham = new SanPham();
 //                sanpham.setGiagoc(rs.getInt(4));
 //                sanpham.setImgUrl(rs.getString(6));
@@ -83,16 +84,16 @@ public class SanPhamDAO {
 //                sanpham.setMotangan(rs.getString(7));
 //                sanpham.setTensanpham(rs.getString(3));
 //                sanpham.setSoluong(rs.getInt(9));
-               
- SanPham sanpham = SanPham.builder().Masanpham(rs.getInt(1))
-                                                    .Madanhmuc(rs.getInt(2))
-                                                    .Tensanpham(rs.getString(3))
-                                                    .Giagoc(rs.getFloat(4))
-                                                    .Khuyenmai(rs.getFloat(5))
-                                                    .Motangan(rs.getString(7))
-                                                    .ImgUrl(rs.getString(6))
-                                                    .Motachitiet(rs.getString(8))
-                                                    .Soluong(rs.getInt(9)).build();
+
+                SanPham sanpham = SanPham.builder().Masanpham(rs.getInt(1))
+                        .Madanhmuc(rs.getInt(2))
+                        .Tensanpham(rs.getString(3))
+                        .Giagoc(rs.getFloat(4))
+                        .Khuyenmai(rs.getFloat(5))
+                        .Motangan(rs.getString(7))
+                        .ImgUrl(rs.getString(6))
+                        .Motachitiet(rs.getString(8))
+                        .Soluong(rs.getInt(9)).build();
                 list.add(sanpham);
             }
         } catch (Exception ex) {
@@ -104,11 +105,11 @@ public class SanPhamDAO {
     public List<SanPham> getAllSanPhamPhanTrang(int page, int page_size) {
         List<SanPham> list = new ArrayList<>();
         try {
-            String sql = "SELECT Masanpham,Madanhmuc,Tensanpham,Giagoc,Khuyenmai,ImgUrl, Motangan,Motachitiet, Soluong FROM \n" +
-"(SELECT ROW_NUMBER() OVER (ORDER BY Tensanpham asc) as rownum, Masanpham,Madanhmuc,Tensanpham,Giagoc,Khuyenmai,ImgUrl, Motangan,Motachitiet, Soluong\n" +
-"FROM SanPham) t\n" +
-"WHERE \n" +
-"rownum >= (? - 1)*? + 1 AND rownum <= ? * ?";
+            String sql = "SELECT Masanpham,Madanhmuc,Tensanpham,Giagoc,Khuyenmai,ImgUrl, Motangan,Motachitiet, Soluong FROM \n"
+                    + "(SELECT ROW_NUMBER() OVER (ORDER BY Tensanpham asc) as rownum, Masanpham,Madanhmuc,Tensanpham,Giagoc,Khuyenmai,ImgUrl, Motangan,Motachitiet, Soluong\n"
+                    + "FROM SanPham) t\n"
+                    + "WHERE \n"
+                    + "rownum >= (? - 1)*? + 1 AND rownum <= ? * ?";
             Connection co = new DBcontext().getConnection();
             PreparedStatement ps = co.prepareStatement(sql);
             ps.setInt(1, page);
@@ -116,7 +117,7 @@ public class SanPhamDAO {
             ps.setInt(3, page);
             ps.setInt(4, page_size);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
 //                SanPham sanpham = new SanPham();
 //                sanpham.setMasanpham(rs.getInt("Masanpham"));
 //                sanpham.setMadanhmuc(rs.getInt("Madanhmuc"));
@@ -128,15 +129,15 @@ public class SanPhamDAO {
 //                sanpham.setMotachitiet(rs.getString("Motachitiet"));
 //                sanpham.setSoluong(rs.getInt("Soluong"));
 
-                    SanPham sanpham = SanPham.builder().Masanpham(rs.getInt("Masanpham"))
-                                                    .Madanhmuc(rs.getInt("Madanhmuc"))
-                                                    .Tensanpham(rs.getString("Tensanpham"))
-                                                    .Giagoc(rs.getFloat("Giagoc"))
-                                                    .Khuyenmai(rs.getFloat("Khuyenmai"))
-                                                    .Motangan(rs.getString("Motangan"))
-                                                    .ImgUrl(rs.getString("ImgUrl"))
-                                                    .Motachitiet(rs.getString("Motachitiet"))
-                                                    .Soluong(rs.getInt("Soluong")).build();
+                SanPham sanpham = SanPham.builder().Masanpham(rs.getInt("Masanpham"))
+                        .Madanhmuc(rs.getInt("Madanhmuc"))
+                        .Tensanpham(rs.getString("Tensanpham"))
+                        .Giagoc(rs.getFloat("Giagoc"))
+                        .Khuyenmai(rs.getFloat("Khuyenmai"))
+                        .Motangan(rs.getString("Motangan"))
+                        .ImgUrl(rs.getString("ImgUrl"))
+                        .Motachitiet(rs.getString("Motachitiet"))
+                        .Soluong(rs.getInt("Soluong")).build();
                 list.add(sanpham);
             }
         } catch (Exception ex) {
@@ -144,15 +145,15 @@ public class SanPhamDAO {
         }
         return list;
     }
-    
-     public int getcount() {
+
+    public int getcount() {
         List<SanPham> list = new ArrayList<>();
         try {
             String sql = "select count(*) as total from SanPham";
             Connection co = new DBcontext().getConnection();
             PreparedStatement ps = co.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
-            if(rs.next()){
+            if (rs.next()) {
                 return rs.getInt("total");
             }
         } catch (Exception ex) {
@@ -162,24 +163,24 @@ public class SanPhamDAO {
     }
 
     public List<SanPham> search(String keyword) {
-    List<SanPham> list = new ArrayList<>();
+        List<SanPham> list = new ArrayList<>();
         try {
             String sql = "select*from SanPham where Tensanpham like ?";
             Connection co = new DBcontext().getConnection();
             PreparedStatement ps = co.prepareStatement(sql);
-            ps.setString(1,"%"+keyword+"%");
+            ps.setString(1, "%" + keyword + "%");
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 SanPham sanpham = SanPham.builder().Masanpham(rs.getInt(1))
-                                                    .Madanhmuc(rs.getInt(2))
-                                                    .Tensanpham(rs.getString(3))
-                                                    .Giagoc(rs.getFloat(4))
-                                                    .Khuyenmai(rs.getFloat(5))
-                                                    .Motangan(rs.getString(7))
-                                                    .ImgUrl(rs.getString(6))
-                                                    .Motachitiet(rs.getString(8))
-                                                    .Soluong(rs.getInt(9)).build();
-               
+                        .Madanhmuc(rs.getInt(2))
+                        .Tensanpham(rs.getString(3))
+                        .Giagoc(rs.getFloat(4))
+                        .Khuyenmai(rs.getFloat(5))
+                        .Motangan(rs.getString(7))
+                        .ImgUrl(rs.getString(6))
+                        .Motachitiet(rs.getString(8))
+                        .Soluong(rs.getInt(9)).build();
+
 //                
                 list.add(sanpham);
             }
@@ -195,19 +196,19 @@ public class SanPhamDAO {
             String sql = "select*from SanPham where Masanpham = ?";
             Connection co = new DBcontext().getConnection();
             PreparedStatement ps = co.prepareStatement(sql);
-            ps.setInt(1,Masanpham);
+            ps.setInt(1, Masanpham);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
-                 SanPham sanpham = SanPham.builder().Masanpham(rs.getInt(1))
-                                                    .Madanhmuc(rs.getInt(2))
-                                                    .Tensanpham(rs.getString(3))
-                                                    .Giagoc(rs.getFloat(4))
-                                                    .Khuyenmai(rs.getFloat(5))
-                                                    .Motangan(rs.getString(7))
-                                                    .ImgUrl(rs.getString(6))
-                                                    .Motachitiet(rs.getString(8))
-                                                    .Soluong(rs.getInt(9)).build();
-               
+            while (rs.next()) {
+                SanPham sanpham = SanPham.builder().Masanpham(rs.getInt(1))
+                        .Madanhmuc(rs.getInt(2))
+                        .Tensanpham(rs.getString(3))
+                        .Giagoc(rs.getFloat(4))
+                        .Khuyenmai(rs.getFloat(5))
+                        .Motangan(rs.getString(7))
+                        .ImgUrl(rs.getString(6))
+                        .Motachitiet(rs.getString(8))
+                        .Soluong(rs.getInt(9)).build();
+
 //                
                 return sanpham;
             }
@@ -216,4 +217,93 @@ public class SanPhamDAO {
         }
         return null;
     }
+
+    public SanPham delete(String Masanpham) {
+
+        try {
+            String sql = "delete from SanPham where Masanpham = ?";
+            Connection co = new DBcontext().getConnection();
+            PreparedStatement ps = co.prepareStatement(sql);
+            ps.setString(1, Masanpham);
+            ps.executeUpdate();
+            ResultSet rs = ps.executeQuery();
+
+        } catch (Exception ex) {
+            Logger.getLogger(DanhMucSanPhamDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+
+    public int insert(SanPham sanpham) {
+        try {
+            String sql = "INSERT INTO [BabooMart].[dbo].[SanPham]\n"
+                    + "           ([Madanhmuc]\n"
+                    + "           ,[Tensanpham]\n"
+                    + "           ,[Giagoc]\n"
+                    + "           ,[Khuyenmai]\n"
+                    + "           ,[ImgUrl]\n"
+                    + "           ,[Motangan]\n"
+                    + "           ,[Motachitiet]\n"
+                    + "           ,[Soluong])\n"
+                    + "     VALUES\n"
+                    + "           (?,?,?,?,?,?,?,?)";
+            Connection co = new DBcontext().getConnection();
+            PreparedStatement ps = co.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setInt(1, sanpham.getMadanhmuc());
+            ps.setString(2, sanpham.getTensanpham());
+            ps.setFloat(3, sanpham.getGiagoc());
+            ps.setFloat(4, sanpham.getKhuyenmai());
+
+            ps.setString(5, sanpham.getImgUrl());
+            ps.setString(6, sanpham.getMotangan());
+            ps.setString(7, sanpham.getMotachitiet());
+            ps.setInt(8, sanpham.getSoluong());
+            ps.executeUpdate();
+
+            ResultSet rs = ps.getGeneratedKeys();
+            if (rs.next()) {
+                return rs.getInt(1);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(GiaoHangDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    public int edit(SanPham sanpham) {
+        try {
+            String sql = "UPDATE [BabooMart].[dbo].[SanPham]\n"
+                    + "   SET [Madanhmuc] = ?\n"
+                    + "      ,[Tensanpham] = ?\n"
+                    + "      ,[Giagoc] = ?\n"
+                    + "      ,[Khuyenmai] = ?\n"
+                    + "      ,[ImgUrl] = ?\n"
+                    + "      ,[Motangan] = ?\n"
+                    + "      ,[Motachitiet] = ?\n"
+                    + "      ,[Soluong] = ?\n"
+                    + " WHERE Masanpham = ?";
+            Connection co = new DBcontext().getConnection();
+            PreparedStatement ps = co.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setInt(1, sanpham.getMadanhmuc());
+            ps.setString(2, sanpham.getTensanpham());
+            ps.setFloat(3, sanpham.getGiagoc());
+            ps.setFloat(4, sanpham.getKhuyenmai());
+
+            ps.setString(5, sanpham.getImgUrl());
+            ps.setString(6, sanpham.getMotangan());
+            ps.setString(7, sanpham.getMotachitiet());
+            ps.setInt(8, sanpham.getSoluong());
+            ps.setInt(9, sanpham.getMasanpham());
+            ps.executeUpdate();
+
+            ResultSet rs = ps.getGeneratedKeys();
+            if (rs.next()) {
+                return rs.getInt(1);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(GiaoHangDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
 }
