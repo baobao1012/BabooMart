@@ -39,8 +39,7 @@ public class QuanlyController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
-            List<SanPham> listSanPham = new SanPhamDAO().getAllSanPham();
-            
+            List<SanPham> listSanPham = new SanPhamDAO().getAllSanPham();           
             request.setAttribute("listSanPham", listSanPham); 
             request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
             request.getRequestDispatcher("dashboard.jsp").forward(request, response);

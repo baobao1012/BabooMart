@@ -55,8 +55,6 @@ public class AddController extends HttpServlet {
                                 .Soluong(Soluong)
                                 .build();
         int Masanpham = new SanPhamDAO().insert(sanpham);
-        
-
            response.sendRedirect("quanly");
     }
 

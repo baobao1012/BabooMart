@@ -61,7 +61,7 @@
                                     <label for="selectAll"></label>
                                 </span>
                             </th>
-                            
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Image</th>
                             <th>Price</th>
@@ -77,7 +77,7 @@
                                         <label for="checkbox1"></label>
                                     </span>
                                 </td>
-                                
+                                <td>${p.getMasanpham()}</td>
                                 <td>${p.getTensanpham()}</td>
                                 <td>
                                     <img src="${p.getImgUrl()}">

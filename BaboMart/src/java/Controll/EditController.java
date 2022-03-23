@@ -35,6 +35,7 @@ public class EditController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            request.setCharacterEncoding("UTF-8");
         String Tensanpham = request.getParameter("name");
         String Anh = request.getParameter("image");
         Float Giagoc = Float.parseFloat(request.getParameter("price"));
@@ -56,7 +57,7 @@ public class EditController extends HttpServlet {
                                 .Soluong(Soluong)
                                 .Masanpham(Masanpham)
                                 .build();
-            int dao = new SanPhamDAO().edit(sanpham);
+            new SanPhamDAO().edit(sanpham);
             response.sendRedirect("quanly");
     }
     }

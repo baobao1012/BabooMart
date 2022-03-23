@@ -253,7 +253,6 @@ public class SanPhamDAO {
             ps.setString(2, sanpham.getTensanpham());
             ps.setFloat(3, sanpham.getGiagoc());
             ps.setFloat(4, sanpham.getKhuyenmai());
-
             ps.setString(5, sanpham.getImgUrl());
             ps.setString(6, sanpham.getMotangan());
             ps.setString(7, sanpham.getMotachitiet());
@@ -283,12 +282,11 @@ public class SanPhamDAO {
                     + "      ,[Soluong] = ?\n"
                     + " WHERE Masanpham = ?";
             Connection co = new DBcontext().getConnection();
-            PreparedStatement ps = co.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement ps = co.prepareStatement(sql);
             ps.setInt(1, sanpham.getMadanhmuc());
             ps.setString(2, sanpham.getTensanpham());
             ps.setFloat(3, sanpham.getGiagoc());
             ps.setFloat(4, sanpham.getKhuyenmai());
-
             ps.setString(5, sanpham.getImgUrl());
             ps.setString(6, sanpham.getMotangan());
             ps.setString(7, sanpham.getMotachitiet());

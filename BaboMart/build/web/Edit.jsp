@@ -49,28 +49,36 @@
                             </div>
                             <div class="modal-body">					
                                 <div class="form-group">
-                                    <label>ID</label>
+                                    <label>Mã sản phẩm</label>
                                     <input value="${sanpham.getMasanpham()}" name="id" type="text" class="form-control" readonly required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Name</label>
+                                    <label>Tên sản phẩm</label>
                                     <input value="${sanpham.getTensanpham()}" name="name" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Image</label>
+                                    <label>Ảnh</label>
                                     <input value="${sanpham.getImgUrl()}" name="image" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Price</label>
+                                    <label>Gía gốc</label>
                                     <input value="${sanpham.getGiagoc()}" name="price" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Title</label>
-                                    <textarea name="title" class="form-control" required>${sanpham.getMotangan()}</textarea>
+                                    <label>Khuyến Mãi</label>
+                                    <input value="${sanpham.getKhuyenmai()}" name="sale" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Description</label>
-                                    <textarea name="description" class="form-control" required>${sanpham.getMotachitiet()}</textarea>
+                                    <label>Mô tả ngắn</label>
+                                    <textarea name="title1" class="form-control" required>${sanpham.getMotangan()}</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Mô tả chi tiết</label>
+                                    <textarea name="title2" class="form-control" required>${sanpham.getMotachitiet()}</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Số Lượng</label>
+                                    <input value="${sanpham.getSoluong()}" name="quantity" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                 <label>Danh Mục</label>

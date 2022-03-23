@@ -39,8 +39,7 @@ public class LoadController extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             int Masanpham =  Integer.parseInt(request.getParameter("Masanpham"));
             List<DanhMucSanPham> listDanhMucSanPham = new DanhMucSanPhamDAO().getAllDanhMuc();
-            SanPham sanpham = new SanPhamDAO().getMasanpham(Masanpham);
-            
+            SanPham sanpham = new SanPhamDAO().getMasanpham(Masanpham);         
             request.setAttribute("sanpham", sanpham);
             request.setAttribute("listDanhMucSanPham", listDanhMucSanPham);
             request.getRequestDispatcher("Edit.jsp").forward(request, response);
